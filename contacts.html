@@ -5,6 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>connexion</title>
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            
+            /*height: 100%;*/
+        }
+        
+        
+        header{
+            height: 64px;
+            width: 100%;
+            background-color: rgba(221,188,149,1);
+            
+
+        }
+        .formulaire {
+            position: relative;
+            width: 87.8%;
+            height: 750px;
+            margin:0 6%; }
+        .formulaire div {
+            position: absolute;
+            height: 400px;
+            width: 50%;
+            margin-left: 300px;
+            margin-top: 150px;
+        }
+
+        footer{
+            height: 380px;
+            background-color: rgba(221,188,149,1) ;
+            width: 100%;
+        }
+        .formulaire div:nth-child(1){
+            background-color: sandybrown;
+            border-radius: 15px;
+        }
+        
+
+        form{
+            
+            position: relative;
+            width: 50%;
+            margin: 10% auto;
+            
+        }
+        input{
+        width:100%;
+        margin: 10px 0;
+        outline:none;
+        padding:10px 6px;
+        background-color:rgba(221,188,149,0.67);;
+        color: #f1f1f1;
+        font-weight:bold;
+        font-size:19px;
+        border: none;
+        border-bottom: 2px solid #f1f1f1;
+        }
+        input[type="submit"]{
+            background-color: transparent;
+        }
+
+
+
+        
+    </style>
 </head>
 <body>
     <header>
@@ -16,13 +88,15 @@
 
     </header>
     
-    <section>
-        <div>
+    <section class="formulaire">
+        <div >
             <form action="" method="POST">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="">
-                <label for="message">Message:</label>
-                <input type="textarea" name="message">
+                <label for="text">Nom:</label></br>
+                <input type="text" name="text" id=""></br>
+                <label for="email">Email:</label></br>
+                <input type="email" name="email" id=""></br>
+                <label for="message">Message:</label></br>
+                <input type="textarea" name="message"></br>
                 <input type="submit" value="ENVOYER">
             </form>
         </div>
