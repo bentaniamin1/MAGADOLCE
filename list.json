@@ -1,0 +1,292 @@
+{
+    "viennoiseries": [
+        
+        {
+            "id": "01",
+            "prix": "1.79",
+            "nom": "boule_de_berlin",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+        
+        {
+            "id": "02",
+            "prix": "3.60",
+            "nom": "cannelé",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "03",
+            "prix": "1",
+            "nom": "pain_au_chocolat",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "04",
+            "prix": "1",
+            "nom": "pain_aux_raisins",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "05",
+            "prix": "3.40",
+            "nom": "le_cramique",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "06",
+            "prix": "2.50",
+            "nom": "le_chinois",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "07",
+            "prix": "1.90",
+            "nom": "la_patte_d'ours",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "08",
+            "prix": "1",
+            "nom": "croissant",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "09",
+            "prix": "3",
+            "nom": "chouquette",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "10",
+            "prix": "6",
+            "nom": "brioche",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        }
+    ]
+}
+
+{
+    "gateaux_etrangers": [
+       
+        {
+            "id": "11",
+            "prix": "11",
+            "nom": "roulé_au_chocolat",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "12",
+            "prix": "22",
+            "nom": "tarte_tropezienne",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "13",
+            "prix": "4.80",
+            "nom": "tarte_au_citron",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+        
+        {
+            "id": "14",
+            "prix": "9",
+            "nom": "roulé_a_la_confiture",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "15",
+            "prix": "2.60",
+            "nom": "paris-brest",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "16",
+            "prix": "3.50",
+            "nom": "mille_feuille",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "17",
+            "prix": "3.80",
+            "nom": "saint_honoré",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "18",
+            "prix": "2.42",
+            "nom": "moka",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "19",
+            "prix": "15",
+            "nom": "tarte_tatin",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "20",
+            "prix": "7.50",
+            "nom": "kouignamann",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "21",
+            "prix": "14",
+            "nom": "gateau_basque",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+        
+        {
+            "id": "22",
+            "prix": "28.50",
+            "nom": "fraisier",
+            "image": ,
+            "description": ,
+            "avalaible": true , 
+        },
+
+        {
+            "id": "23",
+            "prix": "1",
+            "nom": "éclair_chocolat",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "24",
+            "prix": "1",
+            "nom": "éclair_caramel",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "25",
+            "prix": "1",
+            "nom": "éclair_café",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        }
+    ]
+}
+
+{
+    "épicerie": [
+        {
+            "id": "26",
+            "prix":,
+            "nom": "amande_hachée",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "27",
+            "prix":,
+            "nom": "pistache",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "28",
+            "prix":,
+            "nom": "noix_de_coco",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "29",
+            "prix":,
+            "nom": "noix_de_cajou",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "30",
+            "prix":,
+            "nom": "noisette_en_poudre",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        },
+
+        {
+            "id": "31",
+            "prix":,
+            "nom": "graines_de_sésame",
+            "image": ,
+            "description": ,
+            "avalaible": true ,
+        }
+    ]
+}
