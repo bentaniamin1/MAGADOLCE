@@ -2,17 +2,17 @@
     "viennoiseries": [
         
         {
-            "id": "01",
-            "prix": "1.79",
-            "nom": "boule_de_berlin",
+            "id": 1,
+            "prix": 1.79,
+            "nom": "boule de berlin",
             "image": "Images/Viennoiserie/boule_de_berlin.png",
             "description": ,
             "avalaible": true ,
         },
         
         {
-            "id": "02",
-            "prix": "3.60",
+            "id": 2,
+            "prix": 3.60,
             "nom": "cannelé",
             "image": " Images/Viennoiserie/boule de berlin 1.png" ,
             "description": ,
@@ -20,26 +20,26 @@
         },
 
         {
-            "id": "03",
-            "prix": "1",
-            "nom": "pain_au_chocolat",
+            "id": 3,
+            "prix": 1,
+            "nom": "pain au chocolat",
             "image": "Images/Viennoiserie/Pain_choco.png" ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "04",
-            "prix": "1",
-            "nom": "pain_aux_raisins",
+            "id": 4,
+            "prix": 1,
+            "nom": "pain aux raisins",
             "image": "Images/Viennoiserie/pain_aux_raisins.png" ,
             "description": ,
             "avalaible": true , 
         },
 
         {
-            "id": "05",
-            "prix": "3.40",
+            "id": 05,
+            "prix": 3.40,
             "nom": "le_cramique",
             "image": " " ,
             "description": ,
@@ -47,26 +47,26 @@
         },
 
         {
-            "id": "06",
-            "prix": "2.50",
-            "nom": "le_chinois",
+            "id": 6,
+            "prix": 2.50,
+            "nom": "le chinois",
             "image": "Images/Viennoiserie/le_cramique.png" ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "07",
-            "prix": "1.90",
-            "nom": "la_patte_d'ours",
+            "id": 7,
+            "prix": 1.90,
+            "nom": "la patte d'ours",
             "image": " Images/Viennoiserie/la_patte_dours.png" ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "08",
-            "prix": "1",
+            "id": 8,
+            "prix": 1,
             "nom": "croissant",
             "image": "Images/Viennoiserie/croissant.png " ,
             "description": ,
@@ -74,8 +74,8 @@
         },
 
         {
-            "id": "09",
-            "prix": "3",
+            "id": 9,
+            "prix": 3,
             "nom": "chouquette",
             "image": "Images/Viennoiserie/chouquette.png" ,
             "description": ,
@@ -83,8 +83,8 @@
         },
 
         {
-            "id": "10",
-            "prix": "6",
+            "id": 10,
+            "prix": 6,
             "nom": "brioche",
             "image": "Images/Viennoiserie/brioche.png" ,
             "description": ,
@@ -97,44 +97,44 @@
     "gateaux_etrangers": [
 
         {
-            "id": "11",
-            "prix": "11",
-            "nom": "roulé_au_chocolat",
+            "id": 11,
+            "prix": 11,
+            "nom": "roulé au chocolat",
             "image":"Images/gateaux_français/roulé_au_chocolat.png" ,
             "description": ,
             "avalaible": true , 
         },
 
         {
-            "id": "12",
-            "prix": "22",
-            "nom": "tarte_tropezienne",
+            "id": 12,
+            "prix": 22,
+            "nom": "tarte tropezienne",
             "image": "Images/gateaux_français/tarte_tropezienne.png " ,
             "description": ,
             "avalaible": true , 
         },
 
         {
-            "id": "13",
-            "prix": "4.80",
-            "nom": "tarte_au_citron",
+            "id": 13,
+            "prix": 4.80,
+            "nom": "tarte au citron",
             "image": "Images/gateaux_français/tarte_au_citron.png" ,
             "description": ,
             "avalaible": true ,
         },
         
         {
-            "id": "14",
-            "prix": "9",
-            "nom": "roulé_a_la_confiture",
+            "id": 14,
+            "prix": 9,
+            "nom": "roulé a la confiture",
             "image": "Images/gateaux_français/roule_a_la_confiture.png" ,
             "description": ,
             "avalaible": true , 
         },
 
         {
-            "id": "15",
-            "prix": "2.60",
+            "id": 15,
+            "prix": 2.60,
             "nom": "paris-brest",
             "image": "Images/gateaux_français/paris-brest.png " ,
             "description": ,
@@ -142,26 +142,26 @@
         },
 
         {
-            "id": "16",
-            "prix": "3.50",
-            "nom": "mille_feuille",
+            "id": 16,
+            "prix": 3.50,
+            "nom": "mille feuille",
             "image": "Images/gateaux_français/mile_feuille.png" ,
             "description": ,
             "avalaible": true , 
         },
 
         {
-            "id": "17",
-            "prix": "3.80",
-            "nom": "saint_honoré",
+            "id": 17,
+            "prix": 3.80,
+            "nom": "saint honoré",
             "image": "Images/gateaux_français/le_saint_honore.png " ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "18",
-            "prix": "2.42",
+            "id": 18,
+            "prix": 2.42,
             "nom": "moka",
             "image": "Images/gateaux_français/le_saint_honore.png" ,
             "description": ,
@@ -169,9 +169,9 @@
         },
 
         {
-            "id": "19",
-            "prix": "15",
-            "nom": "tarte_tatin",
+            "id": 19,
+            "prix": 15,
+            "nom": "tarte tatin",
             "image": "Images/gateaux_français/la_tarte_tatin.png" ,
             "description": ,
             "avalaible": true ,
@@ -187,9 +187,9 @@
         },
 
         {
-            "id": "21",
-            "prix": "14",
-            "nom": "gateau_basque",
+            "id": 21,
+            "prix": 14,
+            "nom": "gateau basque",
             "image": "Images/gateaux_français/gateaux_basque.png" ,
             "description": ,
             "avalaible": true ,
@@ -205,9 +205,9 @@
         },
 
         {
-            "id": "23",
-            "prix": "1",
-            "nom": "éclair_chocolat",
+            "id": 23,
+            "prix": 1,
+            "nom": "éclair chocolat",
             "image": "Images/gateaux_français/eclair_choco.png " ,
             "description": ,
             "avalaible": true ,
@@ -216,16 +216,16 @@
         {
             "id": "24",
             "prix": "1",
-            "nom": "éclair_caramel",
+            "nom": "éclair caramel",
             "image": "Images/gateaux_français/eclair_caramel.png " ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "25",
-            "prix": "1",
-            "nom": "éclair_café",
+            "id": 25,
+            "prix": 1,
+            "nom": "éclair café",
             "image": "Images/gateaux_français/eclair_cafe.png " ,
             "description": ,
             "avalaible": true ,
@@ -237,16 +237,16 @@
     "épicerie": [
         
         {
-            "id": "26",
+            "id": 26,
             "prix":,
-            "nom": "amande_hachée",
+            "nom": "amande hachée",
             "image": "Images/epicerie/amande_hachée.png " ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "27",
+            "id": 27,
             "prix":,
             "nom": "pistache",
             "image": "Images/epicerie/pistache.png " ,
@@ -255,36 +255,36 @@
         },
 
         {
-            "id": "28",
+            "id": 28,
             "prix":,
-            "nom": "noix_de_coco",
+            "nom": "noix de coco",
             "image": "Images/epicerie/noix_de_coco.png " ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "29",
+            "id": 29,
             "prix":,
-            "nom": "noix_de_cajou",
+            "nom": "noix de cajou",
             "image": "Images/epicerie/noix_de_cajou.png " ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "30",
+            "id": 30,
             "prix":,
-            "nom": "noisette_en_poudre",
+            "nom": "noisette en poudre",
             "image": "Images/epicerie/noisette_en_poudre.png " ,
             "description": ,
             "avalaible": true ,
         },
 
         {
-            "id": "31",
+            "id": 31,
             "prix":,
-            "nom": "graines_de_sésame",
+            "nom": "graines de sésame",
             "image": "Images/epicerie/graines_de_sesame.png " ,
             "description": ,
             "avalaible": true ,
