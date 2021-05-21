@@ -11,10 +11,8 @@
             padding: 0;
         }
         html{
-            height: 100%;
         }
         body{
-            /*height: 100%;*/
         }
         header{
             height: 64px;
@@ -22,28 +20,65 @@
             background-color: rgba(221,188,149,1);
         }
         section div {
+            border-radius: 10px;
             display:grid;
             position: relative;
             left:10%;
             width: 80%;
             height: 200px;
             background-color: rgba(221,188,149,0.67);
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 2fr 0.5fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr ;
             grid-template-areas: 
-            "image  nom nom"
-            "image description description"
-            ".  ";
+            ". . ."
+            "image nom prix "
+            "image description description "
+            ". . ajouter"
+            
+            ;
 
         }
+
         section {
             height: 250px;
         }
+        section div img {
+            grid-area: image;
+            position: absolute;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        section div h1 {
+            grid-area: nom;
+            text-align: center;
+        }
+        section div h2 {
+            grid-area: prix;
+            position: relative;
+            align-items: center;
+            text-align: center;
+        }
+        section div p {
+            grid-area: description;
+        }
+        button{
+            position: relative;
+            top: 10px;
+            width: 320px;
+            grid-area: ajouter;
+            border-radius: 15px;
+            border: none;
+        }
         footer{
+            justify-content: flex-end;
             height: 150px;
             background-color: rgba(221,188,149,1);
             width: 100%;
             }
+        #gateaux_fr:hover{
+            color:red;
+        }
     </style>
 </head>
 <body>
@@ -60,54 +95,19 @@
             <li></li>
         </ul>
     </nav>
-    <section>
+    <section >
         <div>
-            <img src="" >
-            <h1></h1>
-            <p></p>
+            <img id ="imge"src="" alt="">
+            <h1>wertyhukl</h1>
+            <h2>9 $</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
             <button>Ajouter au panier</button>
         </div>
-        
     </section>
-    <section>
-        <div>
-            <img src="" >
-            <h1></h1>
-            <p></p>
-            <button>Ajouter au panier</button>
-        </div>
-        
-    </section>
-    <section>
-        <div>
-            <img src="" >
-            <h1></h1>
-            <p></p>
-            <button>Ajouter au panier</button>
-        </div>
-        
-    </section>
-    <section>
-        <div>
-            <img src="" >
-            <h1></h1>
-            <p></p>
-            <button>Ajouter au panier</button>
-        </div>
-        
-    </section>
-    <section>
-        <div>
-            <img src="" >
-            <h1></h1>
-            <p></p>
-            <button>Ajouter au panier</button>
-        </div>
-        
-    </section>
-    
-    <footer>
+    <main></main>
 
-    </footer>
+    
+    <footer></footer>
+    <script type ="text/javascript" src="co3.js"></script>
 </body>
 </html>
