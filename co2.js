@@ -15,11 +15,13 @@ request.onload = function() {
                     <h1>${contenu.viennoiseries[i].nom}</h1>
                     <h2>${contenu.viennoiseries[i].prix} $</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-                    <button>Ajouter au panier</button>
+                    <button id ="ajouter${contenu.viennoiseries[i].id}">Ajouter au panier</button>
                 </div>
             </section>
         
-        `   
+        ` 
+        let mac = ` ${contenu.viennoiseries[i].id} ` ;
+        console.log(mac);
         let main = document.querySelector("main")
             
         console.log(contenu.viennoiseries[i].image);
@@ -37,6 +39,11 @@ request.onload = function() {
         
     })
     
+    //on va recuperer l'article mtn on va faire la liste d'est evenements pour chaque evenement 
+    //avec le click comme evenement on va pouvoir apres recuper la valuer
+    // ensuite on va l'inserer dams la liste du local storage
+    comsole.log(contenu.viennoiseries[1]);
+    
 };
 request.onerror = function() {
     // Exécuté si jamais la requête ne passe pas
@@ -45,3 +52,4 @@ request.onerror = function() {
 };
 request.responseType = 'json';
 request.send();
+
