@@ -7,27 +7,25 @@ let listePanier = [
         "img" : "Images\epicerie\amande_hachée.png",
     },
 ]
-let checkPanierligne = localStorage.getItem("listePanier");
-if(checkPanierligne == undefined){
-    let listePanierligne = JSON.stringify(listePanier);
-    let ajout = localStorage.setItem('listePanier', listePanierligne );
 
-}else{
-    console.log("Tout est fonctionelle");
-}
-//on rècupere la valeur dans l'html
+let listePanierligne = JSON.stringify(listePanier);
+localStorage.setItem('listePanier', listePanierligne  );
 let nmbrPanier = document.getElementById("Panier");
 let nmbrPanierValue = parseInt(nmbrPanier.innerText);
 console.log(nmbrPanierValue);
 
-//on rècupere le nombre length dans la liste objt du local storage
+
+
+console.log(listePanier.length);
+
 let listePanierligne1 = localStorage.getItem("listePanier");
 let listePanier1 = JSON.parse(listePanierligne1);
-let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
-console.log(listePanier1.length);
+console.log(listePanier1);
 
 console.log(nmbrPanierValue);
+console.log(listePanier1.length);
 
+let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
 
 console.log(ajour);
 

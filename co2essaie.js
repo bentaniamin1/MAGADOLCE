@@ -91,11 +91,16 @@ request.onload = function() {
         `;
         let main = document.querySelector("main");
         main.innerHTML += html;*/
+        function misaJourPanier(){
+            let ajourPanier = JSON.parse(localStorage.getItem('listePanier'));
+            console.log(ajourPanier);
+        };
         let battoi = document.getElementById("ajouter26");
         battoi.addEventListener("click",()=>{
             let ob0 = contenu1.epicerie[0];
             localStorage.setItem("listePanier", JSON.stringify(ob0));
             console.log("tas reussi bg");
+
         });
         let battoi1 = document.getElementById("ajouter27");
         battoi1.addEventListener("click",()=>{
@@ -105,30 +110,55 @@ request.onload = function() {
             let pr = JSON.parse(localStorage.getItem('listePanier'));
             pr.push(contenu1.epicerie[1]);
             localStorage.setItem('listePanier', JSON.stringify(pr));
+            //on rècupere le nombre length dans la liste objt du local storage
+            let listePanierligne1 = localStorage.getItem("listePanier");
+            let listePanier1 = JSON.parse(listePanierligne1);
+            //faire avec iltrer
+            console.log(listePanier1);
+            console.log(contenu1.epicerie[1].nom );
+
+            if(listePanier1.nom != contenu1.epicerie[1].nom ){
+                let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
+            }else{
+                nmbrPanier.innerHTML = listePanier1.length - 10 ;
+
+            }
+            
         });
         let battoi2 = document.getElementById("ajouter28");
         battoi2.addEventListener("click",()=>{
             console.log(contenu1.epicerie[2]);
             console.log("tas reussi bg");
+            let pr = JSON.parse(localStorage.getItem('listePanier'));
+            pr.push(contenu1.epicerie[2]);
+            localStorage.setItem('listePanier', JSON.stringify(pr));
         });
         let battoi3 = document.getElementById("ajouter29");
         battoi3.addEventListener("click",()=>{
             console.log(contenu1.epicerie[3]);
             console.log("tas reussi bg");
+            let pr = JSON.parse(localStorage.getItem('listePanier'));
+            pr.push(contenu1.epicerie[3]);
+            localStorage.setItem('listePanier', JSON.stringify(pr));
         });
         let battoi4 = document.getElementById("ajouter30");
         battoi4.addEventListener("click",()=>{
             console.log(contenu1.epicerie[4]);
             console.log("tas reussi bg");
+            let pr = JSON.parse(localStorage.getItem('listePanier'));
+            pr.push(contenu1.epicerie[4]);
+            localStorage.setItem('listePanier', JSON.stringify(pr));
         });
         let battoi5 = document.getElementById("ajouter31");
         battoi5.addEventListener("click",()=>{
             console.log(contenu1.epicerie[5]);
             console.log("tas reussi bg");
+            let pr = JSON.parse(localStorage.getItem('listePanier'));
+            pr.push(contenu1.epicerie[5]);
+            localStorage.setItem('listePanier', JSON.stringify(pr));
         });
         
         //console.log(listePanier);
-        
     } else if(this.status >= 400) {
         alert("Y'a eu une erreur");
     }
