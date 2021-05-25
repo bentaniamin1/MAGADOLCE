@@ -93,13 +93,18 @@ request.onload = function() {
         main.innerHTML += html;*/
         let battoi = document.getElementById("ajouter26");
         battoi.addEventListener("click",()=>{
-            console.log(contenu1.epicerie[0]);
+            let ob0 = contenu1.epicerie[0];
+            localStorage.setItem("listePanier", JSON.stringify(ob0));
             console.log("tas reussi bg");
         });
         let battoi1 = document.getElementById("ajouter27");
         battoi1.addEventListener("click",()=>{
             console.log(contenu1.epicerie[1]);
-            console.log("tas reussi bg");
+            //let ob0 = contenu1.epicerie[1];
+            //localStorage.setItem("listePanier", JSON.stringify(ob0));
+            let pr = JSON.parse(localStorage.getItem('listePanier'));
+            pr.push(contenu1.epicerie[1]);
+            localStorage.setItem('listePanier', JSON.stringify(pr));
         });
         let battoi2 = document.getElementById("ajouter28");
         battoi2.addEventListener("click",()=>{
@@ -122,7 +127,7 @@ request.onload = function() {
             console.log("tas reussi bg");
         });
         
-
+        //console.log(listePanier);
         
     } else if(this.status >= 400) {
         alert("Y'a eu une erreur");
