@@ -36,7 +36,7 @@ let listePanier = [
     },
 ]
 
-let listePanierligne = JSON.stringify(listePanier)
+let listePanierligne = JSON.stringify(listePanier);
 localStorage.setItem('listePanier', listePanierligne  );
 let nmbrPanier = document.getElementById("Panier");
 let nmbrPanierValue =parseInt(nmbrPanier.innerText);
@@ -55,6 +55,21 @@ console.log(nmbrPanierValue);
 let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier.length;
 
 console.log(ajour);
+
+
+let gen = document.getElementById("a18");
+console.log(gen);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -13,22 +13,31 @@ request.onload = function() {
         /*image.src = "Images\Viennoiserie\boule_de_berlin.png";*/
         /*alert("On a bien été chercher le contenu");*/
         for(i = 0 ; contenu.gateaux_etrangers.length; i++){
-        let html = `<section>
-                <div>
-                    <img id ="imge"src="${contenu.gateaux_etrangers[i].image} " alt="">
-                    <h1>${contenu.gateaux_etrangers[i].nom}</h1>
-                    <h2>${contenu.gateaux_etrangers[i].prix} $</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-                    <button>Ajouter au panier</button>
-                </div>
+            let html = `<section>
+            <div>
+            <img id ="imge"src="${contenu.gateaux_etrangers[i].image} " alt="">
+            <h1>${contenu.gateaux_etrangers[i].nom}</h1>
+            <h2>${contenu.gateaux_etrangers[i].prix} $</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
+            <button id= "a${contenu.gateaux_etrangers[i].id}">Ajouter au panier</button>
+            </div>
             </section>
-        
-        `   
-        let main = document.querySelector("main")
             
-        console.log(contenu.gateaux_etrangers[i].image);
-        main.innerHTML += html;
+            `   
+            let main = document.querySelector("main")
+            
+            console.log(contenu.gateaux_etrangers[i].image);
+            let cv = contenu.gateaux_etrangers[i].id;
+            console.log(cv);
+            main.innerHTML += html;
         }
+
+        console.log(contenu);
+        
+        
+        let man = document.getElementById("a12").innerHTML;
+        console.log(man);
+        
         /*for(let si in contenu){
             console.log(contenu[0]);
         }*/
@@ -37,9 +46,10 @@ request.onload = function() {
     }
     let gateaux_français = document.querySelector("#gateaux_fr");
     gateaux_français.addEventListener("click", function loadbtn(){
-
+        
         
     })
+    
     
 };
 request.onerror = function() {
@@ -49,5 +59,12 @@ request.onerror = function() {
 };
 request.responseType = 'json';
 request.send();
+
+let man = document.getElementById("a11");
+
+console.log(man);
+
+
+
 
 
