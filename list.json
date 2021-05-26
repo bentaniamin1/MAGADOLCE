@@ -7,6 +7,7 @@
             "nom": "boule de berlin",
             "image": "Images/Viennoiserie/boule_de_berlin.png",
             "description": "dsfsfsff" ,
+            "max_articles": 0,
             "avalaible": true 
         },
         
@@ -245,6 +246,7 @@
             "nom": "pistache",
             "image": "Images/epicerie/pistache.png " ,
             "description": "dsfsfsff" ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -254,6 +256,7 @@
             "nom": "noix de coco",
             "image": "Images/epicerie/noix_de_coco.png " ,
             "description": "dsfsfsff" ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
