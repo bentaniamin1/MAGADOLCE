@@ -15,8 +15,7 @@ request.onload = function() {
         let contenu1 = JSON.parse(conteniligne1);
         console.log(contenu1.epicerie[2].id);
         console.log(contenu1.epicerie[0].image);
-        let essaieButton  =  `<button id = "ajouter${contenu1.epicerie[3].id} "> sdfghjkl<button >`;  
-        
+        let essaieButton  =  `<button id = "ajouter${contenu1.epicerie[3].id} "> sdfghjkl<button >`;
         console.log(contenu1.epicerie.length);
             let html1 = `
             <section>
@@ -30,7 +29,7 @@ request.onload = function() {
             </section>
             <section>
             <div>
-            <img id ="imge"src="${contenu1.epicerie[1].image} " alt="">
+            <img id ="imge"src="${contenu1.epicerie[1].image}" alt="">
             <h1>${contenu1.epicerie[1].nom}</h1>
             <h2>${contenu1.epicerie[1].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
@@ -39,7 +38,7 @@ request.onload = function() {
             </section>
             <section>
             <div>
-            <img id ="imge"src="${contenu1.epicerie[2].image} " alt="">
+            <img id ="imge"src="${contenu1.epicerie[2].image}" alt="">
             <h1>${contenu1.epicerie[2].nom}</h1>
             <h2>${contenu1.epicerie[2].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
@@ -121,7 +120,6 @@ request.onload = function() {
                 let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
             }else{
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
-
             }
             
         });
