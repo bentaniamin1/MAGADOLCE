@@ -63,12 +63,11 @@ function supprimer(index){
     pr.splice(pr[i],1);
     console.log(pr);
     localStorage.setItem('listePanier', JSON.stringify(pr));
-    printPanier;
-
+    printPanier();
 }
 
 
-const printPanier = ()=> {
+let printPanier = ()=> {
     
     for(i = 0 ; liste.length; i++){
         let html = 
@@ -85,11 +84,19 @@ const printPanier = ()=> {
             </div>
         </section>
         `   ;
+        let div =
+        `<div>
+        <h1>${liste[i].nom +' produits n° '+[i]} </h1>
+        <p>nombres d'articles : ${liste[i].max_articles}</p>
+        <p>Cout toale du produits :${liste[i].prix = liste[i].max_articles * liste[i].prix } $ </p>
+        </div>`;
 
         let main = document.querySelector("main");
+        let aside = document.getElementById("cv");
         console.log(liste[i].id);
         console.log(liste[i].id);
         main.innerHTML += html;
+        aside.innerHTML += div;
         console.log("sdfghjkl");
         console.log(liste[i].id);
         let po = `${liste[i].id}`;
@@ -109,9 +116,28 @@ const printPanier = ()=> {
     
 }
 
-}
+};
 
 printPanier();
+
+
+let printRecap = ()=>{
+    let liste = JSON.parse(localStorage.getItem('listePanier'));
+    for(i =0; liste.length; i++){
+    let div =
+    `<h1>${liste[i].nom} </h1> 
+    <p>${infoscmd[i].max_articles}</p>`
+
+    console.log(infoscmd[i].nom);
+    let aside = document.querySelector("aside div");
+    aside.innerHTML = div;
+    };
+
+
+
+};
+
+printRecap();
 
 
 //faut recuperer nombres d'articles dans le paniers
