@@ -8,28 +8,29 @@
 </head>
 <style>
     *{
-            margin: 0;
-            padding: 0;
-        }
-        html{
-        }
-        body{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas: 
-            " header header header"
-            " . . ."
-            "aside main . "
-            "footer footer footer";
-                    }
-        header{
-            grid-area: header;
-            height: 64px;
-            width: 100%;
-            background-color: rgba(221,188,149,1);
-        }
-    main{height: 98vh;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+    }
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        " header header header"
+        " . . ."
+        "aside main . "
+        "footer footer footer";
+                }
+    header{
+        grid-area: header;
+        height: 64px;
+        width: 100%;
+        background-color: rgba(221,188,149,1);
+    }
+    main{
+        height: 98vh;
         grid-area: main;
         position: relative;
     }
@@ -41,7 +42,8 @@
     }
     aside div{
         padding: 13px;
-        border-bottom:1px red solid;
+        border-bottom:1px red shadow;
+        background-color:rgba(221,188,149,0.67);
         
     }
     img{
@@ -67,15 +69,16 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: ;
+        background-color:rgba(221,188,149,0.67) ;
         padding: 10px;
         border-radius: 10px;
         border:1px red solid;
-
+        
     }
     .plus{
         width: 100px;
         border-radius: 15px;
+        
     }
     .moin{
         width: 100px;
@@ -89,6 +92,87 @@
         display: flex;
         flex-direction: row;
     }
+
+    .modal1{
+        display: block;
+        position: absolute;
+        background-color: chocolate;
+        opacity: 0.87;
+        top: 30%;
+        left: 10%;
+        width: 70%;
+        margin: 0 90px;
+        height: 600px;
+        z-index: 1;
+
+    }
+    .modal1 h2{
+        position: relative;
+        top: 10px;
+        left: 50vh;
+    }
+    label,input {
+        position: relative;
+        top: 50px;
+        width:100%;
+        margin: 10px 0;
+    }
+    input{
+        width:50%;
+        margin: 1px 0;
+        outline:none;
+        padding:5px 3px;
+        background-color:rgba(221,188,149,0.67);
+        color: #f1f1f1;
+        font-weight:bold;
+        font-size:19px;
+        border: none;
+        border-bottom: 2px solid #f1f1f1;
+    }
+@media screen and (max-width: 414px) {
+    body{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    aside{
+        top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        left: 0;
+        width: 100%;
+        margin: 90px 0;
+    }
+    aside div{
+        padding: 0;
+        width:100%;
+        font-size: 16px;
+        background-color: rgba(221,188,149,0.67);
+        /*display: none;*/
+    }
+    #finaliser{
+        width: 150px;
+    }
+    header{
+
+        width: 100%;
+        height: 40px;
+        background-color: rgba(221,188,149,1);
+    }
+    .modal1{
+        display:none;
+    }
+    section div{
+        width: 50%;
+        height: 30%;
+        font-size: 12px;
+        margin-left: 50px;
+    }
+}
+    
 </style>
 <body>
     <header>
@@ -97,20 +181,36 @@
                 <li id ="Panier">0</li>
             </ul>
         </nav>
-
     </header>
-    <aside>
-        <div id="cv">
-        </div>
-        <button id="finaliser">finaliser la commande</button>
-    </aside>
-    <main>
-    </main>
+</form>
+<aside>
+    <div id="cv"></div>
+    <button id="finaliser">finaliser la commande</button>
+</aside>
+<main></main>
+<div class="modal1">
+    <h2>Finalisation de commande</h2></br>
+    <form action="" id = "modal">
+    <label for="nom" >Nom</label></br>
+        <input type="text" name ="nom"></br>
+        <label for="prenom">prenom</label></br>
+                <input type="text" name = "prenom"></br>
+                <label for="datedeNaissance" >Date de naissance</label></br>
+                <input type="date" name="dateDeNaissance" id=""></br>
+                <label for="ville" >ville</label></br>
+                <input type="text" name="ville" id=""></br>
+                            <label for="codePostale" >Code Postale</label></br>
+                        <input type="number" name="codePostale" id=""></br>
+                        <label for="adresse" name = "adresse"></label></br>
+                <input type="text" name = "adresse"></br>
+                <label for="telephone" >Telephone</label></br>
+        <input type="number" name = "telephone"></br>
+        <label for="email">email</label></br>
+    <input type="email" name = "email"></br>
+    <input type="submit" value="Envoyer" id = "envoyer">
+</div>
     <script type ="text/javascript" src="panier.js"></script>
     <script type ="text/javascript" src="panierpage.js"></script>
-    <footer>
-
-    </footer>
-
+    <footer></footer>
 </body>
 </html>
