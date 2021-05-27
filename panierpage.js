@@ -73,14 +73,13 @@ let printPanier = ()=> {
         let html = 
         `<section>
             <div>
-                <h1>Produit ${[i]} <h1>
-                <img id ="imge"src="${liste[i].image} " alt="">
-                <h1>${liste[i].nom}</h1>
-                <h2>${liste[i].prix} $</h2>
-                <button id = "a` +i+ `" onclick =" plusButton(` +i+ `)">+</button>
-                <p id = "ab` +i+ `">0</p>
-                <button id = "diminuer` +i+ `" onclick ="moinButton(` +i+ `)" >-</button>
-                <button id = "supprimer` +i+ `" onclick ="supprimer(` +i+ `)" >supprimer</button>
+                <h1 class = "product">${' Produit n° '+ [i] +' , ' +liste[i].nom } <h1>
+                <img class = "imge"id ="imge"src="${liste[i].image} " alt="">
+                <h2 class = " prix">${liste[i].prix} $</h2>
+                <button class = "plus"id = "ajouter` +i+ `" onclick =" plusButton(` +i+ `)">+</button>
+                <p class="quantity" id = "ab` +i+ `">0</p>
+                <button class= "moin" id = "diminuer` +i+ `" onclick ="moinButton(` +i+ `)" >-</button>
+                <button class = "delete" id = "supprimer` +i+ `" onclick ="supprimer(` +i+ `)" >supprimer</button>
             </div>
         </section>
         `   ;
@@ -88,9 +87,12 @@ let printPanier = ()=> {
         `<div>
         <h1>${liste[i].nom +' produits n° '+[i]} </h1>
         <p>nombres d'articles : ${liste[i].max_articles}</p>
-        <p>Cout toale du produits :${liste[i].prix = liste[i].max_articles * liste[i].prix } $ </p>
+        <p>Cout totale du produit :${liste[i].prix = liste[i].max_articles * liste[i].prix } $ </p>
         </div>`;
 
+        liste[i].prix = liste[i].max_articles * liste[i].prix;
+        let somme1 = liste[i].prix + liste[i+1].prix;
+        console.log(somme1);
         let main = document.querySelector("main");
         let aside = document.getElementById("cv");
         console.log(liste[i].id);
@@ -107,8 +109,6 @@ let printPanier = ()=> {
         //while(liste.lenght)
         let bt = document.getElementById("a");
         console.log(bt);
-
-    
     
     //let battoi = document.getElementById("ajouter");
     //battoi[i].addEventListener('click',()=>{
@@ -121,7 +121,7 @@ let printPanier = ()=> {
 printPanier();
 
 
-let printRecap = ()=>{
+let printSommeTotaleDuProduit = ()=>{
     let liste = JSON.parse(localStorage.getItem('listePanier'));
     for(i =0; liste.length; i++){
     let div =

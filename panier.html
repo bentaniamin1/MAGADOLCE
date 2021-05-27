@@ -7,32 +7,110 @@
     <title>Panier</title>
 </head>
 <style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            " header header header"
+            " . . ."
+            "aside main . "
+            "footer footer footer";
+                    }
+        header{
+            grid-area: header;
+            height: 64px;
+            width: 100%;
+            background-color: rgba(221,188,149,1);
+        }
+    main{height: 98vh;
+        grid-area: main;
+        position: relative;
+    }
+    aside{
+        grid-area: aside;
+        position: relative;
+        width: 70%;
+        left: 90px;
+    }
+    aside div{
+        padding: 13px;
+        border-bottom:1px red solid;
+        
+    }
+    img{
+        width: 70px;
+        height: 70px;
+    }
+    section{
+        color: chocolate;
+        width: 100%;
+        /*background-color: gainsboro;*/
+        padding: 20px;
+        
+    }
+    #finaliser{
+        position: relative;
+        margin: 1px;
+        left: 17.3%;
+        outline:none;
+        padding:10px 6px;
+    }
 
+    section div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: ;
+        padding: 10px;
+        border-radius: 10px;
+        border:1px red solid;
+
+    }
+    .plus{
+        width: 100px;
+        border-radius: 15px;
+    }
+    .moin{
+        width: 100px;
+        border-radius: 15px;
+    }
+    .delete{
+        width: 100px;
+        border-radius: 15px;
+    }
+    .event{
+        display: flex;
+        flex-direction: row;
+    }
 </style>
 <body>
-    <button id="finaliser la commande">finaliser la commande</button>
+    <header>
+        <nav>
+            <ul>
+                <li id ="Panier">0</li>
+            </ul>
+        </nav>
+
+    </header>
     <aside>
         <div id="cv">
-            <h1>fghj</h1>
-            <h1>ghj</h1>
-
-
-            <p>8</p>
         </div>
+        <button id="finaliser">finaliser la commande</button>
     </aside>
-    <section >
-        <div>
-            <img id ="imge"src="" alt="">
-            <h1>wertyhukl</h1>
-            <h2>9 $</h2>
-            <button id = "a">+</button>
-                <p>0</p>
-            <button id = "diminuer">-</button>
-        </div>
-    </section>
-    <main></main>
+    <main>
+    </main>
     <script type ="text/javascript" src="panier.js"></script>
     <script type ="text/javascript" src="panierpage.js"></script>
+    <footer>
+
+    </footer>
 
 </body>
 </html>
