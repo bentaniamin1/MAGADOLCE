@@ -18,11 +18,16 @@ function plusButton(index){
     console.log(nombreValue);
     if(nombreValue < 9){
         let ajour1 = nombre.innerHTML = nombreValue+ 1;
+        let pr = JSON.parse(localStorage.getItem('listePanier'));
+        let v1 = pr[index].max_articles.value;
+        console.log(v1);
+        let v2 = pr[index].max_articles = nombreValue;
+        console.log(v2);
+        console.log(pr);
+        //localStorage.setItem('listePanier', JSON.stringify(aj1));
+        //localStorage.JSON.stringify(v2))
+        localStorage.setItem('listePanier', JSON.stringify(pr));
     }
-    console.log(ajour1);
-
-
-
     //if(liste[i].id > 9){
         //console.log(liste[i].id);
    // }
@@ -36,30 +41,49 @@ function moinButton(index){
     if(nombreValue > 0){
 
         let ajour1 = nombre.innerHTML = nombreValue - 1;
+        let pr = JSON.parse(localStorage.getItem('listePanier'));
+        let v1 = pr[index].max_articles.value;
+        console.log(v1);
+        let v2 = pr[index].max_articles = nombreValue;
+        console.log(v2);
+        console.log(pr);
+        localStorage.setItem('listePanier', JSON.stringify(pr));
+
     }
     else{
-        let ajour2 = nombre.innerHTML =0
+        let ajour2 = nombre.innerHTML = 0
     }
     console.log(ajour1);
     
+}
+
+function supprimer(index){
+    let pr = JSON.parse(localStorage.getItem('listePanier'));
+    console.log(pr[index]);
+    pr.splice(pr[i],1);
+    console.log(pr);
+    localStorage.setItem('listePanier', JSON.stringify(pr));
+    printPanier;
+
 }
 
 
 const printPanier = ()=> {
     
     for(i = 0 ; liste.length; i++){
-        let html = `<section>
-        <div>
-        <h1>Produit ${[i]} <h1>
-        <img id ="imge"src="${liste[i].image} " alt="">
-        <h1>${liste[i].nom}</h1>
-        <h2>${liste[i].prix} $</h2>
-        <button id = "a` +i+ `" onclick =" plusButton(` +i+ `)">+</button>
-        <p id = "ab` +i+ `">0</p>
-        <button id = "diminuer` +i+ `" onclick ="moinButton(` +i+ `)" >-</button>
-        </div>
+        let html = 
+        `<section>
+            <div>
+                <h1>Produit ${[i]} <h1>
+                <img id ="imge"src="${liste[i].image} " alt="">
+                <h1>${liste[i].nom}</h1>
+                <h2>${liste[i].prix} $</h2>
+                <button id = "a` +i+ `" onclick =" plusButton(` +i+ `)">+</button>
+                <p id = "ab` +i+ `">0</p>
+                <button id = "diminuer` +i+ `" onclick ="moinButton(` +i+ `)" >-</button>
+                <button id = "supprimer` +i+ `" onclick ="supprimer(` +i+ `)" >supprimer</button>
+            </div>
         </section>
-        
         `   ;
 
         let main = document.querySelector("main");
