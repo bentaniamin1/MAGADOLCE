@@ -63,16 +63,16 @@ function supprimer(index){
     pr.splice(pr[i],1);
     console.log(pr);
     localStorage.setItem('listePanier', JSON.stringify(pr));
-    printPanier();
+    printPanier;
 }
 
 
 let printPanier = ()=> {
     
-    for(i = 0 ; liste.length; i++){
+    for(i = 1 ; liste.length; i++){
         let html = 
-        `<section>
-            <div>
+        `
+            <div class = "flex-item" id ="prod` +i+ `">
                 <h1 class = "product">${' Produit n° '+ [i] +' , ' +liste[i].nom } <h1>
                 <img class = "imge"id ="imge"src="${liste[i].image} " alt="">
                 <h2 class = " prix">${liste[i].prix} $</h2>
@@ -81,10 +81,9 @@ let printPanier = ()=> {
                 <button class= "moin" id = "diminuer` +i+ `" onclick ="moinButton(` +i+ `)" >-</button>
                 <button class = "delete" id = "supprimer` +i+ `" onclick ="supprimer(` +i+ `)" >supprimer</button>
             </div>
-        </section>
         `   ;
         let div =
-        `<div>
+        `<div class = "flex-produits"  >
         <h1>${liste[i].nom +' produits n° '+[i]} </h1>
         <p>nombres d'articles : ${liste[i].max_articles}</p>
         <p>Cout totale du produit :${liste[i].prix = liste[i].max_articles * liste[i].prix } $ </p>

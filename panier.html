@@ -14,27 +14,23 @@
     html{
     }
     body{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        " header header header"
-        " . . ."
-        "aside main . "
-        "footer footer footer";
-                }
-    header{
-        grid-area: header;
-        height: 64px;
-        width: 100%;
-        background-color: rgba(221,188,149,1);
+        height: 98%;
+        overflow-x: hidden;
     }
+    header{
+    height: 64px;
+    width: 100%;
+    background-color: rgba(221,188,149,1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
     main{
-        height: 98vh;
+        height: 40vh;
         grid-area: main;
         position: relative;
     }
-    aside{
+    /*aside{
         grid-area: aside;
         position: relative;
         width: 70%;
@@ -45,18 +41,53 @@
         border-bottom:1px red shadow;
         background-color:rgba(221,188,149,0.67);
         
+    }*/
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        left: 500px;
+        top: -300px;
+        overflow-y: scroll;
     }
-    img{
-        width: 70px;
-        height: 70px;
+    aside{
+        position: relative;
     }
-    section{
-        color: chocolate;
-        width: 100%;
-        /*background-color: gainsboro;*/
-        padding: 20px;
+    aside{
         
+        background-color:rgba(221,188,149,0.67);
+        display: flex;
+        top: 100px;
+        margin-left: 90px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 27%;
+        height: 400px;
+        overflow-y: scroll;
+        border-radius: 15px;
+
     }
+    .flex-produits{
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    .flex-item{
+        margin:  0 5%;
+        width: 20%;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 50px;
+        background-color:rgba(221,188,149,0.67);
+        border-radius: 15px;
+    }
+    .flex-item .imge{
+        width: 80px;
+        height: 80px;
+
+
+    }
+    
     #finaliser{
         position: relative;
         margin: 1px;
@@ -65,27 +96,19 @@
         padding:10px 6px;
     }
 
-    section div {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color:rgba(221,188,149,0.67) ;
-        padding: 10px;
-        border-radius: 10px;
-        border:1px red solid;
-        
-    }
+    
     .plus{
-        width: 100px;
+        width: 20px;
         border-radius: 15px;
         
     }
     .moin{
-        width: 100px;
-        border-radius: 15px;
+        width: 20px;
+        border-radius: 20px;
     }
     .delete{
         width: 100px;
+        height: 30px;
         border-radius: 15px;
     }
     .event{
@@ -94,7 +117,7 @@
     }
 
     .modal1{
-        display: block;
+        display: none;
         position: absolute;
         background-color: chocolate;
         opacity: 0.87;
@@ -128,6 +151,12 @@
         font-size:19px;
         border: none;
         border-bottom: 2px solid #f1f1f1;
+    }
+    footer{
+    justify-content: flex-end;
+    height: 410px;
+    background-color: rgba(221,188,149,1);
+    width: 100%;
     }
 @media screen and (max-width: 414px) {
     body{
@@ -187,7 +216,10 @@
     <div id="cv"></div>
     <button id="finaliser">finaliser la commande</button>
 </aside>
-<main></main>
+<div id = "scroll">
+
+    <main></main>
+</div>
 <div class="modal1">
     <h2>Finalisation de commande</h2></br>
     <form action="" id = "modal">

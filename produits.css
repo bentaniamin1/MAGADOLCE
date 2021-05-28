@@ -12,6 +12,7 @@ header{
     width: 100%;
     background-color: rgba(221,188,149,1);
     position: sticky;
+    z-index: 1;
     top: 0;
 }
 section div {
