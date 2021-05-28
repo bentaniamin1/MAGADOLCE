@@ -18,13 +18,27 @@
         overflow-x: hidden;
     }
     header{
-    height: 64px;
-    width: 100%;
-    background-color: rgba(221,188,149,1);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items:flex-end;
+            padding: 20px 10px;
+            background-color: rgba(221,188,149,1);
+            opacity: 0.8;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: honeydew;
+            font-size: 20px;
+        }
+        li  {
+            display: inline-block;
+            padding: 0px 20px;
+        }
     main{
         height: 40vh;
         grid-area: main;
@@ -54,6 +68,16 @@
     aside{
         position: relative;
     }
+    #na{
+        color:crimson;
+    }
+    #titre{
+        position: relative;
+        transform: translateX(620px);
+        top: 45px;
+        padding: 30px;
+
+    }
     aside{
         
         background-color:rgba(221,188,149,0.67);
@@ -76,7 +100,7 @@
         margin:  0 5%;
         width: 20%;
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 50px;
         background-color:rgba(221,188,149,0.67);
         border-radius: 15px;
@@ -84,8 +108,10 @@
     .flex-item .imge{
         width: 80px;
         height: 80px;
-
-
+        border-radius: 15px;
+        position: relative;
+        left: 10px;
+        top: 10px;
     }
     
     #finaliser{
@@ -119,14 +145,14 @@
     .modal1{
         display: none;
         position: absolute;
-        background-color: chocolate;
-        opacity: 0.87;
+        background-color: rgba(221,188,149,1);
         top: 30%;
         left: 10%;
         width: 70%;
         margin: 0 90px;
         height: 600px;
         z-index: 1;
+        border-radius: 15px;
 
     }
     .modal1 h2{
@@ -136,13 +162,17 @@
     }
     label,input {
         position: relative;
-        top: 50px;
+        top: 30px;
         width:100%;
-        margin: 10px 0;
+        margin: 10px 300px;
+        font-size: 15px;
+    }
+    label{
+        font-size: 20px;
     }
     input{
         width:50%;
-        margin: 1px 0;
+        margin: 1px 300px;
         outline:none;
         padding:5px 3px;
         background-color:rgba(221,188,149,0.67);
@@ -150,8 +180,20 @@
         font-weight:bold;
         font-size:19px;
         border: none;
-        border-bottom: 2px solid #f1f1f1;
+        border-bottom: 2px solid #f1f1f1;;
     }
+    input[type = "submit"]{
+        border: 1px solid chocolate;
+        background-color: black;
+        border-radius: 15px;
+        padding: 10px 15px;
+        
+    }
+    .finlisation{
+        width:100px;
+        height: 50px;
+        background-color: red;
+        }
     footer{
     justify-content: flex-end;
     height: 410px;
@@ -166,12 +208,15 @@
         flex-direction: column;
 
     }
+    header{
+        position: inherit;
+    }
     aside{
-        top: 70px;
+        top: 700px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        left: 0;
+        left: 10px;
         width: 100%;
         margin: 90px 0;
     }
@@ -191,14 +236,54 @@
         height: 40px;
         background-color: rgba(221,188,149,1);
     }
-    .modal1{
-        display:none;
+    #titre{
+        transform: translateX(100px);
+        
+    }
+    main{
+        left: 20px;
+        top: -500px;
+        width: 340px;
+        height: 650px;
+    
+    }
+    .flex-item{
+        margin:  0 5%;
+        width: 100%;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left: 20px;
+
     }
     section div{
         width: 50%;
         height: 30%;
         font-size: 12px;
         margin-left: 50px;
+    }
+    footer{
+        height: 100px;
+        width: 100%;
+    }
+    .modal1{
+        top: 780px;
+        width: 380px;
+        height: 850px;
+        left: 1%;
+        margin: 0 10px;
+        opacity: 1;
+        background-color: rgba(221,188,149,1);
+    }
+    input[type = "submit"]{
+        border: 1px solid chocolate;
+        
+    }
+    .modal1 h2{
+        left: 40px;
+    }
+    label,input{
+        position:relative;
+        margin: 15px 50px;
     }
 }
     
@@ -207,39 +292,45 @@
     <header>
         <nav>
             <ul>
-                <li id ="Panier">0</li>
+                <li id ="lien1"><a href="viennoiserie.html" class="lien">Viennoiseries</a></li>
+                <li id ="lien2"><a href="epicerie.html" class="lien">épicerie</a></li>
+                <li id ="lien3"><a href="patisserie.html" class="lien">Patisserie</a></li>
+                <li id ="Panier" class="na">0</li>
             </ul>
         </nav>
     </header>
-</form>
+<h1 id= "titre">Mon Panier</h1>
 <aside>
     <div id="cv"></div>
-    <button id="finaliser">finaliser la commande</button>
 </aside>
 <div id = "scroll">
-
+    
     <main></main>
 </div>
 <div class="modal1">
     <h2>Finalisation de commande</h2></br>
     <form action="" id = "modal">
-    <label for="nom" >Nom</label></br>
-        <input type="text" name ="nom"></br>
-        <label for="prenom">prenom</label></br>
-                <input type="text" name = "prenom"></br>
-                <label for="datedeNaissance" >Date de naissance</label></br>
-                <input type="date" name="dateDeNaissance" id=""></br>
-                <label for="ville" >ville</label></br>
-                <input type="text" name="ville" id=""></br>
-                            <label for="codePostale" >Code Postale</label></br>
-                        <input type="number" name="codePostale" id=""></br>
-                        <label for="adresse" name = "adresse"></label></br>
-                <input type="text" name = "adresse"></br>
-                <label for="telephone" >Telephone</label></br>
-        <input type="number" name = "telephone"></br>
-        <label for="email">email</label></br>
-    <input type="email" name = "email"></br>
-    <input type="submit" value="Envoyer" id = "envoyer">
+        <label for="nom" >Nom</label></br>
+            <input type="text" name ="nom"></br>
+            <label for="prenom">prenom</label></br>
+                    <input type="text" name = "prenom"></br>
+                    <label for="datedeNaissance" >Date de naissance</label></br>
+                    <input type="date" name="dateDeNaissance" id=""></br>
+                    <label for="ville" >Ville</label></br>
+                    <input type="text" name="ville" id=""></br>
+                                <label for="codePostale" >Code Postale</label></br>
+                            <input type="number" name="codePostale" id=""></br>
+                            <label for="adresse" name = "adresse"></label></br>
+                    <input type="text" name = "adresse"></br>
+                    <label for="telephone" >Telephone</label></br>
+            <input type="number" name = "telephone"></br>
+            <label for="email">email</label></br>
+        <input type="email" name = "email"></br>
+        <input type="submit" value="Envoyer" id = "envoyer">
+    </form>
+</div>
+<div class = "finalisation">
+    <button id="finaliser">finaliser la commande</button>
 </div>
     <script type ="text/javascript" src="panier.js"></script>
     <script type ="text/javascript" src="panierpage.js"></script>

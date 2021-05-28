@@ -6,15 +6,33 @@ html{
 }
 body{
     overflow-x: hidden;
+    background-image: url("fond.jpeg");
 }
 header{
-    height: 64px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 20px 10px;
     background-color: rgba(221,188,149,1);
+    opacity: 0.8;
     position: sticky;
-    z-index: 1;
     top: 0;
+    z-index: 1;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: chocolate;
+    font-size: 20px;
+}
+li  {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+
 section div {
     border-radius: 10px;
     display:grid;
@@ -34,6 +52,7 @@ section div {
     ;
 
 }
+
 #off{
     display: none;
 }
@@ -44,12 +63,17 @@ section div {
 section {
     height: 250px;
 }
+section div:hover{
+    background-color: rgb(194, 158, 115) ;
+    transform: scalex(1.1);
+}
 section div img {
     grid-area: image;
     position: absolute;
     left: 20px;
     width: 150px;
     height: 150px;
+    border-radius: 15px;
 }
 section div h1 {
     grid-area: nom;
@@ -81,11 +105,7 @@ footer{
 #gateaux_fr:hover{
     color:red;
 }
-header ul li {
-    position: relative;
-    left: 70px;
-    top: 30px;
-}
+
 @media screen and (max-width: 414px){
     header{
         height: 42px;
@@ -98,7 +118,7 @@ header ul li {
     section div {
 
         font-size: 12px;
-        left: 10%;
+        left: 2%;
         height: 65%;
         width: 350px;
         display:flex;

@@ -12,12 +12,18 @@ let min = 0;
 function plusButton(index){
     
     let nombre = document.getElementById('ab'+(index));
+    let nombre1 = document.getElementById('nmbrarticle'+(index));
+    let coutTot = document.getElementById('cTot'+(index));
     console.log(nombre);
     let maxArticles = parseInt(liste[index].max_articles);
     let nombreValue = parseInt(nombre.innerText);
+    let nombreValue1 = parseInt(nombre1.innerText);
     console.log(nombreValue);
     if(nombreValue < 9){
-        let ajour1 = nombre.innerHTML = nombreValue+ 1;
+        let ajour1 = nombre.innerHTML = nombreValue + 1;
+        let ajour3 = nombre1.innerHTML = "nombres d'articles :"+ (nombreValue +1);
+        coutTot.innerHTML = "Cout totale du produit : " +  (nombreValue ) * maxArticles ; 
+        
         let pr = JSON.parse(localStorage.getItem('listePanier'));
         let v1 = pr[index].max_articles.value;
         console.log(v1);
@@ -34,6 +40,8 @@ function plusButton(index){
 }
 function moinButton(index){
     let nombre = document.getElementById('ab'+(index));
+    let nombre1 = document.getElementById('nmbrarticle'+(index));
+    let coutTot = document.getElementById('cTot'+(index));
     console.log(nombre);
     let maxArticles = parseInt(liste[index].max_articles);
     let nombreValue = parseInt(nombre.innerText);
@@ -41,6 +49,9 @@ function moinButton(index){
     if(nombreValue > 0){
 
         let ajour1 = nombre.innerHTML = nombreValue - 1;
+        let ajour3 = nombre1.innerHTML = "nombres d'articles :"+ (nombreValue -1);
+        coutTot.innerHTML = "Cout totale du produit : " +  (nombreValue ) * maxArticles; 
+        
         let pr = JSON.parse(localStorage.getItem('listePanier'));
         let v1 = pr[index].max_articles.value;
         console.log(v1);
@@ -51,7 +62,7 @@ function moinButton(index){
 
     }
     else{
-        let ajour2 = nombre.innerHTML = 0
+        let ajour2 = nombre.innerHTML = 0;
     }
     console.log(ajour1);
     
@@ -63,7 +74,7 @@ function supprimer(index){
     pr.splice(pr[i],1);
     console.log(pr);
     localStorage.setItem('listePanier', JSON.stringify(pr));
-    printPanier;
+    location.reload()
 }
 
 
@@ -85,8 +96,8 @@ let printPanier = ()=> {
         let div =
         `<div class = "flex-produits"  >
         <h1>${liste[i].nom +' produits n° '+[i]} </h1>
-        <p>nombres d'articles : ${liste[i].max_articles}</p>
-        <p>Cout totale du produit :${liste[i].prix = liste[i].max_articles * liste[i].prix } $ </p>
+        <p id = "nmbrarticle` +i+ `">nombres d'articles : 0</p>
+        <p id ="cTot` +i+ `">Cout totale du produit : 0 $ </p>
         </div>`;
 
         liste[i].prix = liste[i].max_articles * liste[i].prix;
