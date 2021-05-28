@@ -5,90 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>viennoiserie</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        html{
-        }
-        body{
-        }
-        header{
-            height: 64px;
-            width: 100%;
-            background-color: rgba(221,188,149,1);
-        }
-        section div {
-            border-radius: 10px;
-            display:grid;
-            position: relative;
-            left:10%;
-            width: 80%;
-            height: 200px;
-            background-color: rgba(221,188,149,0.67);
-            grid-template-columns: 1fr 1fr 2fr 0.5fr;
-            grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr ;
-            grid-template-areas: 
-            ". . ."
-            "image nom prix "
-            "image description description "
-            ". . ajouter"
-            
-            ;
-
-        }
-
-        section {
-            height: 250px;
-        }
-        section div img {
-            grid-area: image;
-            position: absolute;
-            left: 20px;
-            width: 150px;
-            height: 150px;
-        }
-        section div h1 {
-            grid-area: nom;
-            text-align: center;
-        }
-        section div h2 {
-            grid-area: prix;
-            position: relative;
-            align-items: center;
-            text-align: center;
-        }
-        section div p {
-            grid-area: description;
-        }
-        button{
-            position: relative;
-            top: 10px;
-            width: 320px;
-            grid-area: ajouter;
-            border-radius: 15px;
-            border: none;
-        }
-        footer{
-            justify-content: flex-end;
-            height: 150px;
-            background-color: rgba(221,188,149,1);
-            width: 100%;
-            }
-        #gateaux_fr:hover{
-            color:red;
-        }
-        header ul li {
-            position: relative;
-            left: 70px;
-            top: 30px;
-        }
-        #ajouter5{
-            color:red;
-        }
-    </style>
-
+    <link rel="stylesheet" href="produits.css">
 </head>
 <body>
     <header>
@@ -115,7 +32,7 @@
     </section>
     
     <main></main>
-    <script type ="text/javascript" src="co2essaie.js"></script>
+    <script type ="text/javascript" src="viennoiseriepage.js"></script>
     <script type ="text/javascript" src="panier.js"></script>
 </body>
 <footer>
