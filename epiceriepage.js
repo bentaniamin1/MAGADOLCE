@@ -178,7 +178,7 @@ request.onload = function() {
             }
             
         });
-        let btnepicerie4 = document.getElementById("ajouter29");
+        let btnepicerie4 = document.getElementById("ajouter30");
         btnepicerie4.addEventListener("click",()=>{
             console.log(contenu1.epicerie[4]);
             //let ob0 = contenu1.epicerie[1];
@@ -200,7 +200,7 @@ request.onload = function() {
             }
             
         });
-        let btnepicerie5 = document.getElementById("ajouter29");
+        let btnepicerie5 = document.getElementById("ajouter31");
         btnepicerie5.addEventListener("click",()=>{
             console.log(contenu1.epicerie[3]);
             //let ob0 = contenu1.epicerie[1];

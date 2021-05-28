@@ -5,11 +5,14 @@
 html{
 }
 body{
+    overflow-x: hidden;
 }
 header{
     height: 64px;
     width: 100%;
     background-color: rgba(221,188,149,1);
+    position: sticky;
+    top: 0;
 }
 section div {
     border-radius: 10px;
@@ -29,6 +32,9 @@ section div {
     
     ;
 
+}
+#off{
+    display: none;
 }
 #ajouter80{
     display: none;
