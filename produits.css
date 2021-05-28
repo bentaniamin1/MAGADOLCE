@@ -30,6 +30,9 @@ section div {
     ;
 
 }
+#ajouter80{
+    display: none;
+}
 
 section {
     height: 250px;

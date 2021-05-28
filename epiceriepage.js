@@ -90,19 +90,30 @@ request.onload = function() {
         `;
         let main = document.querySelector("main");
         main.innerHTML += html;*/
-        function misaJourPanier(){
-            let ajourPanier = JSON.parse(localStorage.getItem('listePanier'));
-            console.log(ajourPanier);
-        };
-        let battoi = document.getElementById("ajouter26");
-        battoi.addEventListener("click",()=>{
-            let ob0 = contenu1.epicerie[0];
-            localStorage.setItem("listePanier", JSON.stringify(ob0));
-            console.log("tas reussi bg");
+        let btnepicerie = document.getElementById("ajouter26");
+        btnepicerie.addEventListener("click",()=>{
+            console.log(contenu1.epicerie[0]);
+            //let ob0 = contenu1.epicerie[1];
+            //localStorage.setItem("listePanier", JSON.stringify(ob0));
+            let pr = JSON.parse(localStorage.getItem('listePanier'));
+            pr.push(contenu1.epicerie[0]);
+            localStorage.setItem('listePanier', JSON.stringify(pr));
+            //on rècupere le nombre length dans la liste objt du local storage
+            let listePanierligne1 = localStorage.getItem("listePanier");
+            let listePanier1 = JSON.parse(listePanierligne1);
+            //faire avec iltrer
+            console.log(listePanier1);
+            console.log(contenu1.epicerie[0].nom);
 
+            if(listePanier1.nom != contenu1.epicerie[0].nom ){
+                let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
+            }else{
+                nmbrPanier.innerHTML = listePanier1.length - 10 ;
+            }
+            
         });
-        let battoi1 = document.getElementById("ajouter27");
-        battoi1.addEventListener("click",()=>{
+        let btnepicerie1 = document.getElementById("ajouter27");
+        btnepicerie1.addEventListener("click",()=>{
             console.log(contenu1.epicerie[1]);
             //let ob0 = contenu1.epicerie[1];
             //localStorage.setItem("listePanier", JSON.stringify(ob0));
@@ -123,8 +134,8 @@ request.onload = function() {
             }
             
         });
-        let battoi2 = document.getElementById("ajouter28");
-        battoi2.addEventListener("click",()=>{
+        let btnepicerie2 = document.getElementById("ajouter28");
+        btnepicerie2.addEventListener("click",()=>{
             console.log(contenu1.epicerie[2]);
             //let ob0 = contenu1.epicerie[1];
             //localStorage.setItem("listePanier", JSON.stringify(ob0));
@@ -134,7 +145,7 @@ request.onload = function() {
             //on rècupere le nombre length dans la liste objt du local storage
             let listePanierligne1 = localStorage.getItem("listePanier");
             let listePanier1 = JSON.parse(listePanierligne1);
-            //faire avec filtrer
+            //faire avec iltrer
             console.log(listePanier1);
             console.log(contenu1.epicerie[2].nom);
 
@@ -143,10 +154,10 @@ request.onload = function() {
             }else{
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
+            
         });
-        let battoi3 = document.getElementById("ajouter29");
-        battoi3.addEventListener("click",()=>{
-
+        let btnepicerie3 = document.getElementById("ajouter29");
+        btnepicerie3.addEventListener("click",()=>{
             console.log(contenu1.epicerie[3]);
             //let ob0 = contenu1.epicerie[1];
             //localStorage.setItem("listePanier", JSON.stringify(ob0));
@@ -159,28 +170,57 @@ request.onload = function() {
             //faire avec iltrer
             console.log(listePanier1);
             console.log(contenu1.epicerie[3].nom);
-            
+
             if(listePanier1.nom != contenu1.epicerie[3].nom ){
                 let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
             }else{
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
+            
         });
-        let battoi4 = document.getElementById("ajouter30");
-        battoi4.addEventListener("click",()=>{
+        let btnepicerie4 = document.getElementById("ajouter29");
+        btnepicerie4.addEventListener("click",()=>{
             console.log(contenu1.epicerie[4]);
-            console.log("tas reussi bg");
+            //let ob0 = contenu1.epicerie[1];
+            //localStorage.setItem("listePanier", JSON.stringify(ob0));
             let pr = JSON.parse(localStorage.getItem('listePanier'));
             pr.push(contenu1.epicerie[4]);
             localStorage.setItem('listePanier', JSON.stringify(pr));
+            //on rècupere le nombre length dans la liste objt du local storage
+            let listePanierligne1 = localStorage.getItem("listePanier");
+            let listePanier1 = JSON.parse(listePanierligne1);
+            //faire avec iltrer
+            console.log(listePanier1);
+            console.log(contenu1.epicerie[4].nom);
+
+            if(listePanier1.nom != contenu1.epicerie[4].nom ){
+                let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
+            }else{
+                nmbrPanier.innerHTML = listePanier1.length - 10 ;
+            }
+            
         });
-        let battoi5 = document.getElementById("ajouter31");
-        battoi5.addEventListener("click",()=>{
-            console.log(contenu1.epicerie[5]);
-            console.log("tas reussi bg");
+        let btnepicerie5 = document.getElementById("ajouter29");
+        btnepicerie5.addEventListener("click",()=>{
+            console.log(contenu1.epicerie[3]);
+            //let ob0 = contenu1.epicerie[1];
+            //localStorage.setItem("listePanier", JSON.stringify(ob0));
             let pr = JSON.parse(localStorage.getItem('listePanier'));
             pr.push(contenu1.epicerie[5]);
             localStorage.setItem('listePanier', JSON.stringify(pr));
+            //on rècupere le nombre length dans la liste objt du local storage
+            let listePanierligne1 = localStorage.getItem("listePanier");
+            let listePanier1 = JSON.parse(listePanierligne1);
+            //faire avec iltrer
+            console.log(listePanier1);
+            console.log(contenu1.epicerie[5].nom);
+
+            if(listePanier1.nom != contenu1.epicerie[5].nom ){
+                let ajour = nmbrPanier.innerHTML = nmbrPanierValue + listePanier1.length;
+            }else{
+                nmbrPanier.innerHTML = listePanier1.length - 10 ;
+            }
+            
         });
         
         //console.log(listePanier);
