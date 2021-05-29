@@ -1,3 +1,5 @@
+
+
 let requestURL = 'list.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -107,8 +109,14 @@ request.onload = function() {
             `;
             let main = document.querySelector("main");
             main.innerHTML += html;
-        /*let html = `
-        <section>
+            let burger = document.getElementById('burger').addEventListener("click", () =>{
+    
+                let nav  = document.querySelector("ul");
+                nav.classList.toggle("animation1");
+            
+            });
+            /*let html = `
+            <section>
         <div>
         <img id ="imge"src="${contenu.viennoiseries[2].image} " alt="">
         <h1>${contenu.viennoiseries[2].nom}</h1>

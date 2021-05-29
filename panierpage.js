@@ -1,3 +1,22 @@
+let burger = document.getElementById('burger').addEventListener("click", () =>{
+
+    let nav  = document.querySelector("ul");
+    nav.classList.toggle("animation1");
+
+});
+
+let finalisation_commande = document.getElementById('finaliser').addEventListener("click", () =>{
+
+    let formulaire1  = document.getElementById("formulaire_commande");
+    formulaire1.classList.add("animation2");
+    let printSommetot  = document.getElementById("somme_tot");
+    let nombre1 = document.getElementById('nmbrarticle'+(index));
+    printSommetot.innerHTML = "sdfsfdsfer";
+
+
+});
+
+
 let listeP = localStorage.getItem("listePanier");
 let liste = JSON.parse(listeP);
 

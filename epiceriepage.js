@@ -76,6 +76,11 @@ request.onload = function() {
             `;
             let main = document.querySelector("main");
             main.innerHTML = html1;
+            let burger = document.getElementById('burger').addEventListener("click", () =>{    
+                let nav  = document.querySelector("ul");
+                nav.classList.toggle("animation1");
+            
+            });
         /*let html = `
         <section>
         <div>

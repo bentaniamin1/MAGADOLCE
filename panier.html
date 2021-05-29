@@ -23,7 +23,7 @@
             justify-content: space-between;
             align-items:flex-end;
             padding: 20px 10px;
-            background-color: rgba(221,188,149,1);
+            background-color: rgb(219, 169, 107);;
             opacity: 0.8;
             position: sticky;
             top: 0;
@@ -73,7 +73,7 @@
     }
     #titre{
         position: relative;
-        transform: translateX(620px);
+        transform: translateX(70px);
         top: 45px;
         padding: 30px;
 
@@ -117,7 +117,8 @@
     #finaliser{
         position: relative;
         margin: 1px;
-        left: 17.3%;
+        left: 13.5%;
+        top:-200px;
         outline:none;
         padding:10px 6px;
     }
@@ -146,13 +147,17 @@
         display: none;
         position: absolute;
         background-color: rgba(221,188,149,1);
-        top: 30%;
+        top: 15%;
         left: 10%;
         width: 70%;
         margin: 0 90px;
-        height: 600px;
+        height: 650px;
         z-index: 1;
         border-radius: 15px;
+
+    }
+    .animation2{
+        display:block;
 
     }
     .modal1 h2{
@@ -160,19 +165,31 @@
         top: 10px;
         left: 50vh;
     }
+    .coutinfo{
+        border: 1px red solid;
+        width: 200px;
+        height: 60px;
+    }
     label,input {
         position: relative;
         top: 30px;
         width:100%;
-        margin: 10px 300px;
+        margin: 10px 250px;
         font-size: 15px;
+    }
+    #logo{
+        position: absolute;
+        left: 150px;
+        width: 250px;
+        height: 80px;
+        top: 0px;
     }
     label{
         font-size: 20px;
     }
     input{
         width:50%;
-        margin: 1px 300px;
+        margin: 1px 250px;
         outline:none;
         padding:5px 3px;
         background-color:rgba(221,188,149,0.67);
@@ -182,12 +199,15 @@
         border: none;
         border-bottom: 2px solid #f1f1f1;;
     }
+    input:hover{
+        background-color: blanchedalmond;
+    }
     input[type = "submit"]{
         border: 1px solid chocolate;
         background-color: black;
         border-radius: 15px;
         padding: 10px 15px;
-        
+        position:25px;
     }
     .finlisation{
         width:100px;
@@ -197,9 +217,98 @@
     footer{
     justify-content: flex-end;
     height: 410px;
-    background-color: rgba(221,188,149,1);
+    background-color: rgb(219, 169, 107);
     width: 100%;
     }
+    footer{
+            height: 380px;
+            background-color: rgba(221,188,149,1) ;
+            width: 100%;
+        }
+
+        #reseaux {
+            font-size: 20px;
+            position: relative;
+            top: 40px;
+            left: 650px;
+        }
+
+        .logoContact {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           position: relative;  
+           top: 90px; 
+           text-align: center;
+        }
+
+        #logoFB {
+        margin-left: 500px;
+        }
+
+        #logoLKD {
+            margin-right: 500px;
+        }
+
+        .titres{
+         display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           position: relative;  
+           top: 150px; 
+           text-align: center;
+        }
+
+        .aide {
+            position: relative;
+            top: 175px;
+            left: 120px;
+        }
+
+        .contact {
+            position: relative;
+            top: 100px;
+            left: 480px;
+        }
+
+        .magasin {
+            position: relative;
+            top: 30px;
+            left: 830px;
+        }
+
+        .horaires {
+            position: relative;
+            top: -25px;
+            left: 1210px;
+        }
+
+        .n_patisserie a {
+            text-decoration: none;
+            color: white;
+        }
+        .n_viennoiserie a {
+            text-decoration: none;
+            color: white;
+        }
+        .n_epicerie a {
+            text-decoration: none;
+            color: white;
+        }
+        .n1_epicerie a {
+            text-decoration: none;
+            color: white;
+        }
+        .tendance1 a {
+            text-decoration: none;
+            color: white;
+        }
+        .tendance2 a {
+            text-decoration: none;
+            color: white;
+        }
+        .tendance3 a {
+            text-decoration: none;
+            color: white;
+        }
 @media screen and (max-width: 414px) {
     body{
         width:100%;
@@ -216,8 +325,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        left: 10px;
-        width: 100%;
+        left: 30px;
+        width: 80%;
         margin: 90px 0;
     }
     aside div{
@@ -231,14 +340,20 @@
         width: 150px;
     }
     header{
-
+        position : relative;
         width: 100%;
         height: 40px;
-        background-color: rgba(221,188,149,1);
+        background-color: rgb(219, 169, 107);
     }
     #titre{
         transform: translateX(100px);
         
+    }
+    #logo{
+        position: relative;
+        left: -135px;
+        width: 160px;
+        height: 50px;
     }
     main{
         left: 20px;
@@ -252,9 +367,58 @@
         width: 100%;
         font-size: 12px;
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 40px;
 
     }
+    .burger{
+        position: absolute;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .burger div{
+        height: 6px;
+        width: 40px;
+        background-color: black;
+        margin-top: 7px;
+        border-radius: 10px;
+    }
+    nav{
+        top: +60px;
+        margin-top: 10px;
+    }
+    nav ul{
+        position: relative;
+        top: -115px;
+        left:-225px;
+        background-color: rgba(221,188,149,1);;
+        height: 400px;
+        width: 200px;
+        z-index: 1;
+    }
+    .animation1{
+        display:none;
+    }
+    .na{
+        position: relative;
+        left:-40px;
+        top:-20px;
+    }
+    li{
+        position: relative;
+        display: block;
+        top: 50px;
+        margin-top: 100px;
+        border-bottom: 2px solid chocolate;
+        
+    }
+    nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            top: 20px;
+            margin-top: 40px;
+        }
     section div{
         width: 50%;
         height: 30%;
@@ -266,13 +430,18 @@
         width: 100%;
     }
     .modal1{
-        top: 780px;
+        display:none;
+        top: 450px;
         width: 380px;
         height: 850px;
         left: 1%;
         margin: 0 10px;
         opacity: 1;
         background-color: rgba(221,188,149,1);
+    }
+    .animation2{
+        display:block;
+
     }
     input[type = "submit"]{
         border: 1px solid chocolate;
@@ -290,12 +459,18 @@
 </style>
 <body>
     <header>
+        <div id = "burger" class = "burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img id = "logo"src="Images\background\logo_white_large.png" alt="">
+        <p id ="Panier" class="na">0</p>
         <nav>
             <ul>
                 <li id ="lien1"><a href="viennoiserie.html" class="lien">Viennoiseries</a></li>
                 <li id ="lien2"><a href="epicerie.html" class="lien">épicerie</a></li>
                 <li id ="lien3"><a href="patisserie.html" class="lien">Patisserie</a></li>
-                <li id ="Panier" class="na">0</li>
             </ul>
         </nav>
     </header>
@@ -307,8 +482,11 @@
     
     <main></main>
 </div>
-<div class="modal1">
+<div class="modal1" id = "formulaire_commande">
     <h2>Finalisation de commande</h2></br>
+    <div class="coutinfo">
+        <p id="somme_tot"></p>
+    </div>
     <form action="" id = "modal">
         <label for="nom" >Nom</label></br>
             <input type="text" name ="nom"></br>
@@ -334,6 +512,56 @@
 </div>
     <script type ="text/javascript" src="panier.js"></script>
     <script type ="text/javascript" src="panierpage.js"></script>
-    <footer></footer>
+    <footer>
+        <div id="reseaux">Suivez nous sur :</div>
+        <section class="logoContact">
+        <div id="logoFB"><img src="Images/logoFB.jpeg" alt="logofb" style="height: 50px; width: 50;"></div>
+        <div id="logoTWT"><img src="Images/logoTWT.jpeg" alt="logotwt"style="height: 50px; width: 50;"></div>
+        <div id="logoLKD"><img src="Images/logoLKD.jpeg" alt="logolkd"style="height: 50px; width: 50;"></div>
+    </section>
+
+    <section class="titres"> 
+        <div id="titreAide"><h3>Aide</h3></div>
+        <div id="titreContact"><h3>Nous contactez</h3> </div>
+        <div id="nosMagasins"><h3>Magasins</h3></div>
+        <div id="titreHoraire"><h3>Horaires :</h3></div>
+    </section>
+
+    
+       
+        <section class="aide">
+        <div id="suiviCommande">Suivi de commandes</div>
+        <div id="infoLivraison">Livraisons</div>
+        <div id="conditionGenerale">Condiitons gÃ©nÃ©rales</div>
+        <div id="mentionLegale">Mentions lÃ©gales</div>
+
+    </section>
+
+    <section class="contact">
+        
+        <div id="formulaireContact"> <a href="contacts.html">Formulaire de contact</a></div>
+        <div id="FB">Facebook</div>
+        <div id="TWT">Twitter</div>
+        <div id="LKD">Linkedln</div>
+        </section>
+        
+
+    <section class="magasin">
+       
+        <div id="paris">18 rue du flan 75008 Paris</div>
+        <div id="Lille">56 rue du croissant 59800 Lille</div>
+        <div id="Lyon">78 rue de lâ€™Ã©clair 69003 Lyon</div>
+        
+    </section>
+
+    <section class="horaires">
+        
+        <div id="L-S">Lundi - Samedi : <br>
+            7h00 - 13h00 et 15h00 - 20h</div>
+        <div id="D-JF">Dimanche et jours feries : <br>
+            7h00 - 13h00</div>
+        
+    </section>
+    </footer>
 </body>
 </html>
