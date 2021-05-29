@@ -121,7 +121,15 @@ button{
     width: 320px;
     grid-area: ajouter;
     border-radius: 15px;
+    background-color: rgb(204, 156, 96);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: 8px;
+    color: blanchedalmond;
     border: none;
+}
+button:hover{
+    border-bottom: 1px black solid;
 }
 footer{
     justify-content: flex-end;
@@ -236,6 +244,7 @@ footer{
     }
     button{
         position: absolute;
+        background-color: black;
 
         width: 40%;
         top: 40px;

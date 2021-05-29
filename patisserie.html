@@ -5,121 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>patisserie</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        html{
-            height: 3998px;
-        }
-        body{
-        }
-        header{
-            height: 64px;
-            width: 100%;
-            background-color: rgba(221,188,149,1);
-        }
-        section div {
-            border-radius: 10px;
-            display:grid;
-            position: relative;
-            left:10%;
-            width: 80%;
-            height: 200px;
-            background-color: rgba(221,188,149,0.67);
-            grid-template-columns: 1fr 1fr 2fr 0.5fr;
-            grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr ;
-            grid-template-areas: 
-            ". . ."
-            "image nom prix "
-            "image description description "
-            ". . ajouter"
-            
-            ;
-
-        }
-
-        section {
-            height: 250px;
-        }
-        section div img {
-            grid-area: image;
-            position: absolute;
-            left: 20px;
-            width: 150px;
-            height: 150px;
-        }
-        section div h1 {
-            grid-area: nom;
-            text-align: center;
-        }
-        section div h2 {
-            grid-area: prix;
-            position: relative;
-            align-items: center;
-            text-align: center;
-        }
-        section div p {
-            grid-area: description;
-        }
-        button{
-            position: relative;
-            top: 10px;
-            width: 320px;
-            grid-area: ajouter;
-            border-radius: 15px;
-            border: none;
-        }
-        footer{
-            justify-content: flex-end;
-            height: 150px;
-            background-color: rgba(221,188,149,1);
-            width: 100%;
-            }
-        #gateaux_fr:hover{
-            color:red;
-        }
-
-        header ul li {
-            position: relative;
-            left: 70px;
-            top: 30px;
-
-        }
-        #ajouter4 {
-            background-color: red;
-        }
-    </style>
-
+    <link rel="stylesheet" href="produits.css">
 </head>
 <body>
     <header>
+        <div id = "burger" class = "burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img id = "logo"src="Images\background\logo_white_large.png" alt="">
+        <p id ="Panier" class="na">0</p>
         <nav>
             <ul>
-                <li id ="Panier">0</li>
+                <li id ="lien1"><a href="epicerie.html" class="lien">épicerie</a></li>
+                <li id ="lien2"><a href="patisserie.html" class="lien">Patisserie</a></li>
+                <li id ="lien4"><a href="viennoiserie.html" class="lien">Viennoiseries</a></li>
+                <li id ="lien3"><a href="panier.html" class="lien">Viennoiseries</a></li>
             </ul>
         </nav>
-
     </header>
-    <nav>
-        <ul>
-            <li></li>
-        </ul>
-    </nav>
-    <button id="gateaux_fr">Gateaux Français </button>
-    <section >
+    <div class="info">
+        <button id= "g_fr">Gateaux Français</button>
+        <button id= "g_et">Gateaux Etrangers</button>
+    </div>
+    <section id= "off" >
         <div>
             <img id ="imge"src="" alt="">
             <h1>wertyhukl</h1>
             <h2>9 $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id = "ajouter">Ajouter au panier</button>
+            <button id= "ajouter80">Ajouter au panier</button>
         </div>
     </section>
     <main></main>
     <footer></footer>
-    <script type ="text/javascript" src="co1.js"></script>
+    <script type ="text/javascript" src="patisseriepage.js"></script>
     <script type ="text/javascript" src="panier.js"></script>
 </body>
 </html>

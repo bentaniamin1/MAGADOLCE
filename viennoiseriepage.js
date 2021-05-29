@@ -102,7 +102,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[9].nom}</h1>
             <h2>${contenu2.viennoiseries[9].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[9].id}">Ajouter au panier</button>
+            <button class ="couleur" id ="ajouter${contenu2.viennoiseries[9].id}">Ajouter au panier</button>
             </div>
             </section>
             
