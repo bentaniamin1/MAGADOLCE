@@ -37,6 +37,18 @@ let finalisation_commande = document.getElementById('finaliser').addEventListene
 
 
 });
+
+function sauvegarde_local(){
+    let input1 = document.getElementById("locals1");
+    let input2 = document.getElementById("locals2").value;
+    let input3 = document.getElementById("locals3").value;
+    let input4 = document.getElementById("locals4").value;
+    let input5 = document.getElementById("locals5").value;
+    let info = input.value;
+    localStorage.setItem("infoCommande",info);
+    
+
+}
 // supprimer les articles
 let supprimer_les_articles = document.getElementById('deleteAll').addEventListener("click", () =>{
     console.log("sdfghjklò");

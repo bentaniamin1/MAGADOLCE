@@ -257,18 +257,18 @@
         outline:none;
         padding:5px 3px;
         background-color:rgba(221,188,149,0.67);
-        color: #f1f1f1;
+        color: black;
         font-weight:bold;
         font-size:19px;
         border: none;
-        border-bottom: 2px solid #f1f1f1;;
+        border-bottom: 2px solid #f1f1f1;
     }
     input:hover{
         background-color: blanchedalmond;
     }
     input[type = "submit"]{
         border: 1px solid chocolate;
-        background-color: black;
+        background-color: #f1f1f1;
         border-radius: 15px;
         padding: 10px 15px;
         position:25px;
@@ -535,22 +535,22 @@
     </div>
     <form action="" id = "modal">
         <label for="nom" >Nom</label></br>
-            <input type="text" name ="nom"></br>
+            <input type="text" name ="nom" id = "locals1"></br>
             <label for="prenom">prenom</label></br>
-                    <input type="text" name = "prenom"></br>
+                    <input type="text" name = "prenom" id = "locals2"></br>
                     <label for="datedeNaissance" >Date de naissance</label></br>
-                    <input type="date" name="dateDeNaissance" id=""></br>
+                    <input type="date" name="dateDeNaissance" id="locals3"></br>
                     <label for="ville" >Ville</label></br>
-                    <input type="text" name="ville" id=""></br>
+                    <input type="text" name="ville" id="locals4"></br>
                                 <label for="codePostale" >Code Postale</label></br>
-                            <input type="number" name="codePostale" id=""></br>
+                            <input type="number" name="codePostale" id="locals5"></br>
                             <label for="adresse" name = "adresse"></label></br>
                     <input type="text" name = "adresse"></br>
                     <label for="telephone" >Telephone</label></br>
             <input type="number" name = "telephone"></br>
             <label for="email">email</label></br>
         <input type="email" name = "email"></br>
-        <input type="submit" value="Envoyer" id = "envoyer">
+        <input type="submit" value="Envoyer" onclick="sauvegarde_local()" id = "envoyer">
     </form>
 </div>
 <div class = "finalisation">
