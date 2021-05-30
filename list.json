@@ -6,7 +6,7 @@
             "prix": 1.79,
             "nom": "boule de berlin",
             "image": "Images/viennoiserie/boule_de_berlin.png",
-            "description": "dsfsfsff" ,
+            "description": "Une boule de Berlin est un beignet d’origine austro-allemande fait à partir de pâte levée frite dans de l’huile, fourrée avant la cuisson à la marmelade, à la confiture ou à la crème pâtissière, et recouvert de sucre, généralement glacé." ,
             "max_articles": 0,
             "avalaible": true 
         },
@@ -16,7 +16,8 @@
             "prix": 3.60,
             "nom": "cannelé",
             "image": " Images/viennoiserie/cannele.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le cannelé est un petit gâteau bordelais, à pâte molle et tendre, parfumé au rhum et à la vanille, en forme de cylindre d’environ cinq centimètres de haut et cinq centimètres de diamètre, cuit dans un moule originellement en cuivre, qui lui donne une fine croûte caramélisée." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -25,7 +26,8 @@
             "prix": 1,
             "nom": "pain au chocolat",
             "image": "Images/viennoiserie/Pain_choco.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le pain au chocolat est une viennoiserie constituée d’une pâte levée feuilletée, identique à celle du croissant, rectangulaire et enroulée sur une ou plusieurs barres de chocolat." ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -34,7 +36,8 @@
             "prix": 1,
             "nom": "pain aux raisins",
             "image": "Images/viennoiserie/pain_aux_raisins.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le pain aux raisins est une viennoiserie constituée d’une pâte levée , mélangée avec des raisins secs, et fourrée de crème pâtissière." ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -43,7 +46,8 @@
             "prix": 3.40,
             "nom": "le_cramique",
             "image": "Images/viennoiserie/le_cramique.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le cramique est un pain brioché belge fourré de raisins secs. C’est une recette qu’on retrouve, à l’origine, dans les trois régions de Belgique." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -52,7 +56,8 @@
             "prix": 2.50,
             "nom": "le chinois",
             "image": "Images/viennoiserie/le_chinois.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le chinois est une viennoiserie constituée d’une brioche fourrée de crème pâtissière. Ce gâteau est originaire d’Allemagne ou d’Alsace. Sa forme est composée de spirales juxtaposées rappelant la coquille du gastéropode." ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -61,7 +66,8 @@
             "prix": 1.90,
             "nom": "la patte d'ours",
             "image": " Images/viennoiserie/la_patte_dours.png" ,
-            "description": "dsfsfsff" ,
+            "description": "La patte d’ours est une viennoiserie formée d’un rectangle de pâte briochée garnie d’une crème pâtissière à la vanille et de pépites de chocolat, également désignée sous le nom de pain suisse." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -70,7 +76,8 @@
             "prix": 1,
             "nom": "croissant",
             "image": "Images/viennoiserie/croissant.png " ,
-            "description": "dsfsfsff" ,
+            "description": "Le croissant est une viennoiserie à base d’une pâte levée feuilletée spécifique, la pâte à croissant, qui comporte de la levure et une proportion importante de beurre." ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -79,7 +86,8 @@
             "prix": 3,
             "nom": "chouquette",
             "image": "Images/viennoiserie/chouquette.png" ,
-            "description": "dsfsfsff" ,
+            "description": "La chouquette est une petite pâtisserie soufflée à base de pâte à choux et de sucre." ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -88,7 +96,8 @@
             "prix": 6,
             "nom": "brioche",
             "image": "Images/viennoiserie/brioche.png" ,
-            "description": "dsfsfsff" ,
+            "description": "La brioche est une pâtisserie, à pâte levée et assez aérée, contenant du beurre, de la farine et des œufs." ,
+            "max_articles": 0,
             "avalaible": true
         }
     ],
@@ -99,7 +108,8 @@
             "prix": 11,
             "nom": "roulé au chocolat",
             "image":"Images/gateaux_français/roulé_au_chocolat.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le gâteau roulé est un enroulement de génoise et de crème fouettée, de confiture ou de glaçage." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -108,7 +118,8 @@
             "prix": 22,
             "nom": "tarte tropezienne",
             "image": "Images/gateaux_français/tarte_tropezienne.png " ,
-            "description": "dsfsfsff" ,
+            "description": "La tarte tropézienne est un gâteau monté à partir d'une brioche au sucre, fendue en deux au niveau de sa taille, et garnie d'un mélange de deux crèmes.",
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -117,7 +128,8 @@
             "prix": 4.80,
             "nom": "tarte au citron",
             "image": "Images/gateaux_français/tarte_au_citron.png" ,
-            "description": "dsfsfsff" ,
+            "description": "La tarte au citron est une tarte sucrée garnie de crème à base de citron. Elle ne comprend aucun fruit. La crème est un mélange d'œufs, de sucre, de jus de citron et de zeste de citron." ,
+            "max_articles": 0,
             "avalaible": true 
         },
         
@@ -126,7 +138,8 @@
             "prix": 9,
             "nom": "roulé a la confiture",
             "image": "Images/gateaux_français/roule_a_la_confiture.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le gâteau roulé est un enroulement de génoise et de crème fouettée, de confiture ou de glaçage." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -135,7 +148,8 @@
             "prix": 2.60,
             "nom": "paris brest",
             "image": "Images/gateaux_français/paris-brest.png " ,
-            "description": "dsfsfsff" ,
+            "description": "Le paris-brest est une pâtisserie traditionnelle d'origine française, en forme de roue de vélo pour rendre hommage à la course cycliste Paris-Brest-Paris. Elle est composée d'une pâte à choux fourrée d'une crème mousseline pralinée, parsemée d'amandes effilées." ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -144,8 +158,10 @@
             "prix": 3.50,
             "nom": "mille feuille",
             "image": "Images/gateaux_français/mile_feuille.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le mille-feuille est une pièce de pâtisserie faite de trois couches de pâte feuilletée et deux couches de crème pâtissière. Le dessus est glacé avec du sucre glace ou du fondant. On peut y ajouter de la confiture ou des fruits." ,
+            "max_articles": 0,
             "avalaible": true
+            
         },
 
         {
@@ -153,7 +169,8 @@
             "prix": 3.80,
             "nom": "saint honoré",
             "image": "Images/gateaux_français/le_saint_honore.png " ,
-            "description": "dsfsfsff" ,
+            "description":"Le Saint-honoré est une pâtisserie d'origine française qui se compose d'une base en pâte feuilletée (mais elle peut être brisée ou sablée), garnie de pâte à choux. Une fois cuite, cette succulente pâtisserie est nappée de crème pâtissière et de petits choux également garnis." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -161,9 +178,11 @@
             "id": 18,
             "prix": 2.42,
             "nom": "moka",
-            "image": "Images/gateaux_français/le_saint_honore.png" ,
-            "description": "dsfsfsff" ,
+            "image": "Images/gateaux_français/le_moka.png" ,
+            "description": "Le moka est une pâtisserie française du xixe siècle, faite de génoise et de crème au beurre parfumée au café, parfois au chocolat. Il tient son nom de la variété de café moka." ,
+            "max_articles": 0,
             "avalaible": true 
+            
         },
 
         {
@@ -171,7 +190,8 @@
             "prix": 15,
             "nom": "tarte tatin",
             "image": "Images/gateaux_français/la_tarte_tatin.png" ,
-            "description": "dsfsfsff" ,
+            "description": "La tarte Tatin est une tarte aux pommes caramélisées au sucre et au beurre dont la pâte est disposée au-dessus de la garniture avant la cuisson au four. Elle est ensuite renversée sur un plat et servie tiède." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -180,7 +200,8 @@
             "prix": 7.50,
             "nom": "kouignamann",
             "image": "Images/gateaux_français/kouign_amann.png " ,
-            "description": "dsfsfsff" ,
+            "description": "Le kouign-amann est élaboré à partir de pâte à pain, recouverte d'un mélange de beurre et sucre, puis repliée en feuilletage et scarifiée en losanges sur la face supérieure du pâton ainsi obtenu. Lors de la cuisson, le mélange beurre-sucre suinte à travers le feuilletage en caramélisant, conférant à cette spécialité une texture fondante à l'intérieur et croustillante à l'extérieur." ,
+            "max_articles": 0,
             "avalaible": true  
         },
 
@@ -189,7 +210,8 @@
             "prix": 14,
             "nom": "gateau basque",
             "image": "Images/gateaux_français/gateaux_basque.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le gâteau basque est un gâteau typique du Labourd et d'une partie de la Basse-Navarre, au Pays basque, traditionnellement fourré de cerises noires, ou de crème pâtissière à l'amande ou au rhum/vanille (comme un flan au rhum)." ,
+            "max_articles": 0,
             "avalaible": true 
         },
         
@@ -198,7 +220,8 @@
             "prix": 28.50,
             "nom": "fraisier",
             "image": "Images/gateaux_français/fraisier.png" ,
-            "description": "dsfsfsff" ,
+            "description": "Le fraisier est une pâtisserie à base de fraises, de génoise, de crème et souvent recouverte d'une mince couche de pâte d'amande (la plupart du temps rose)." ,
+            "max_articles": 0,
             "avalaible": true  
         },
 
@@ -207,7 +230,8 @@
             "prix": 1,
             "nom": "éclair chocolat",
             "image": "Images/gateaux_français/eclair_choco.png " ,
-            "description": "dsfsfsff" ,
+            "description": "Classique de la pâtisserie française, on ne présente plus cette coque de pâte à choux garnie d'une crème pâtissière au chocolat, glacée d'un fondant chocolat." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -216,7 +240,8 @@
             "prix": 1,
             "nom": "éclair caramel",
             "image": "Images/gateaux_français/eclair_caramel.png " ,
-            "description": "dsfsfsff" ,
+            "description": "Classique de la pâtisserie française, on ne présente plus cette coque de pâte à choux garnie d'une crème pâtissière au caramel, glacée d'un fondant caramel." ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -225,7 +250,8 @@
             "prix": 1,
             "nom": "éclair café",
             "image": "Images/gateaux_français/eclair_cafe.png " ,
-            "description": "dsfsfsff" ,
+            "description":  "Classique de la pâtisserie française, on ne présente plus cette coque de pâte à choux garnie d'une crème pâtissière au café, glacée d'un fondant café." ,
+            "max_articles": 0,
             "avalaible": true
         }
     ],
@@ -237,6 +263,7 @@
             "nom": "amande hachée",
             "image": "Images/epicerie/amande_hachée.png " ,
             "description": "dsfsfsff" ,
+            "max_articles": 0,
             "avalaible": true 
         },
 
@@ -266,6 +293,7 @@
             "nom": "noix de cajou",
             "image": "Images/epicerie/noix_de_cajou.png " ,
             "description": "dsfsfsff" ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -275,6 +303,7 @@
             "nom": "noisette en poudre",
             "image": "Images/epicerie/noisette_en_poudre.png " ,
             "description": "dsfsfsff" ,
+            "max_articles": 0,
             "avalaible": true
         },
 
@@ -284,7 +313,61 @@
             "nom": "graines de sésame",
             "image": "Images/epicerie/graines_de_sesame.png " ,
             "description": "dsfsfsff" ,
+            "max_articles": 0,
             "avalaible": true
         }
-    ]
+    ],
+    "gateaux_francais": [
+        {
+            "id": 32,
+            "prix": 1,
+            "nom": "taiyaki",
+            "image":"Images/gateaux_etrangers/taiyaki.png ",
+            "description": "Le taiyaki est un gâteau japonais en forme de poisson.",
+            "max_articles": 0,
+            "avalaible": true 
+        },
+    
+        {
+            "id": 33,
+            "prix": 1,
+            "nom": "scones",
+            "image":" Images/gateaux_etrangers/scones.png",
+            "description": "Le scone est un petit pain, ou cake lorsque la recette inclus du sucre d'origine écossaise.",
+            "max_articles": 0,
+            "avalaible": true 
+        },
+    
+        {
+            "id": 34,
+            "prix": 1,
+            "nom": "sachetorte",
+            "image":"Images/gateaux_etrangers/sachetorte.png ",
+            "description": "La sachetorte est un gâteau au chocolat d'origine viennoise.",
+            "max_articles": 0,
+            "avalaible": true 
+        },
+    
+        {
+            "id": 35,
+            "prix": 1,
+            "nom": "pavlova",
+            "image":"Images/gateaux_etrangers/pavlova.png ",
+            "description": "Le pavlova est un gâteau a la meringue d'origine Australienne ou Neo-zélandaise.",
+            "max_articles": 0,
+            "avalaible": true 
+        },
+    
+        {
+            "id": 36,
+            "prix": 1,
+            "nom": "pudding",
+            "image":" Images/gateaux_etrangers/pudding_anglais.png",
+            "description": "Le pudding est une masse compacte constituée en mélangeant divers ingrédients à un produit céréalier ou à un liant",
+            "max_articles": 0,
+            "avalaible": true 
+        }
+
+    ]    
+    
 }
