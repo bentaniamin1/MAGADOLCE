@@ -4,7 +4,7 @@ let burger = document.getElementById('burger').addEventListener("click", () =>{
     nav.classList.toggle("animation1");
 
 });
-
+//button formulaire
 let finalisation_commande = document.getElementById('finaliser').addEventListener("click", (index) =>{
 
     let formulaire1  = document.getElementById("formulaire_commande");
@@ -37,6 +37,7 @@ let finalisation_commande = document.getElementById('finaliser').addEventListene
 
 
 });
+// supprimer les articles
 let supprimer_les_articles = document.getElementById('deleteAll').addEventListener("click", () =>{
     console.log("sdfghjklò");
     localStorage.clear();
@@ -60,6 +61,7 @@ console.log(liste[1].nom);
 let max = 9;
 let min = 0;
 
+//plusButton
 function plusButton(index){
     
     let nombre = document.getElementById('ab'+(index));
@@ -91,6 +93,7 @@ function plusButton(index){
         //console.log(liste[i].id);
    // }
 }
+//moinButton
 function moinButton(index){
     let nombre = document.getElementById('ab'+(index));
     let nombre1 = document.getElementById('nmbrarticle'+(index));
@@ -125,7 +128,7 @@ function moinButton(index){
     console.log(ajour1);
     
 }
-
+//supprimer
 function supprimer(index){
     let pr = JSON.parse(localStorage.getItem('listePanier'));
     console.log(pr[index]);
@@ -135,7 +138,7 @@ function supprimer(index){
     location.reload();
 }
 
-
+//printPanier
 let printPanier = ()=> {
 
     for(i = 0 ; liste.length; i++){

@@ -1,3 +1,5 @@
+
+//listePanier localstorage
 let listePanier = [
 
 ]
@@ -24,7 +26,6 @@ console.log(nmbrPanierValue);
 
 
 console.log(ajour);
-
 
 let gen = document.getElementById("a18");
 console.log(gen);
