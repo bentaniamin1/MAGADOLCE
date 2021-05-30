@@ -2,7 +2,7 @@
     "viennoiseries": [
         
         {
-            "id": 1,
+            "id": 150,
             "prix": 1.79,
             "nom": "boule de berlin",
             "image": "Images/viennoiserie/boule_de_berlin.png",
@@ -15,7 +15,7 @@
             "id": 2,
             "prix": 3.60,
             "nom": "cannelé",
-            "image": " Images/viennoiserie/boule de berlin 1.png" ,
+            "image": " Images/viennoiserie/cannele.png" ,
             "description": "dsfsfsff" ,
             "avalaible": true 
         },
@@ -42,7 +42,7 @@
             "id": 5,
             "prix": 3.40,
             "nom": "le_cramique",
-            "image": " " ,
+            "image": "Images/viennoiserie/le_cramique.png" ,
             "description": "dsfsfsff" ,
             "avalaible": true 
         },
@@ -51,7 +51,7 @@
             "id": 6,
             "prix": 2.50,
             "nom": "le chinois",
-            "image": "Images/viennoiserie/le_cramique.png" ,
+            "image": "Images/viennoiserie/le_chinois.png" ,
             "description": "dsfsfsff" ,
             "avalaible": true
         },

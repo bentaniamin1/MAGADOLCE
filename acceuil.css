@@ -1,39 +1,134 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 html{
     height: 100%;
 }
 body{
     
+    background-size: cover ;
     /*height: 100%;*/
 }
-
-
+#logo{
+    position: relative;
+    left: -135px;
+    width: 160px;
+    height: 50px;
+}
 header{
-    height: 64px;
-    width: 100%;
-    background-color: rgba(221,188,149,1);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 20px 10px;
+    background-color: rgb(219, 169, 107);
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
+nav ul li a {
+    text-decoration: none;
+    color: honeydew;
+    font-size: 20px;
+}
+li  {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#logo {
+    position: absolute;
+    left: 150px;
+    width: 250px;
+    height: 65px;
+    top: 10px;
+}
+#logo1{
+    position: relative;
+    width: 40px;
+    height: 50px;
+    top:-25px;
+}
+.na1{
+    display: block;
+    position: relative;
+        margin-left: 30px;
+        padding: 5px;
+        border-radius: 25px;
+        width: 7px;
+        height: 12px;
+        top: 45px;
+        z-index: 1;
+        color: red;
+}
+#logo1responsive{
+    display:none;
 }
 .info {
     width: 87.8%;
     height: 2%;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     margin:0 6%;
 }
 .novaute { 
     position: relative;
     top: 150px;
     height: 950px;
+    margin: 0 10%;
+    left: 10px;
     /*position: relative;
     height: 800px;
     margin:0 6%;
     display: flex;*/
 
 }
+
+#descrnouveau1{}
+#descrsousnouveau1{}
+#descrsousnouveau2{}
+#descrsousnouveau3{}
+
+#imgn1{
+    position: absolute;
+    border-radius: 15px;
+    height: 90%;
+    width: 100%;
+
+}
+
+#imgn2{
+    position: absolute;
+    border-radius: 15px;
+    height: 90%;
+    width: 100%;
+    
+}
+
+#imgn3{
+    
+    position: absolute;
+    border-radius: 15px;
+    height: 90%;
+    width: 100%;
+    
+    
+}
+
+#imgn4{
+    
+    position: absolute;
+    border-radius: 15px;
+    height: 90%;
+    width: 100%;
+    
+    
+}
+
 .sous_nouveauté{
     /*margin:0 6%;
     display: flex;
@@ -45,6 +140,7 @@ header{
     margin:0 6%;
     grid-column-gap: 50px;
 }
+
 .n_patisserie {
     position: relative;
     top: 50px;
@@ -52,11 +148,16 @@ header{
     
     
     height: 380px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     
     margin:0 6%;
     
     
+}
+.n_patisserie:hover,.n_viennoiserie:hover, .n_epicerie:hover, .n1_epicerie:hover{
+    transform: scale(1.1);
+    background-color: rgba(221,188,149,0.67);
+    opacity: 0.9;
 }
 .n_viennoiserie {
     grid-area: p1;
@@ -64,14 +165,14 @@ header{
     top: 100px;
     border-radius: 15px;
     height: 180px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
 }
 .n_epicerie {
     grid-area: v1;
     position: relative;
     top: 100px;
     height: 180px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
 }
 .n1_epicerie {
@@ -80,7 +181,7 @@ header{
     position: relative;
     top: 100px;
     height: 180px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
 }
 
@@ -96,18 +197,115 @@ header{
     grid-template-rows: 1fr;
     grid-template-areas:  
     "tendance1  tendance2  tendance3";
-    margin:0 6%;
+    margin:0 14%;
     grid-row-gap: 10%;
     grid-column-gap: 50px;
     }
+#descrtendance1,
+#descrtendance2,
+#descrtendance3{
+    position: absolute;
+    left: 35%;
+    top: 60%;
+    
+}
+
+#n1ouv1{
+    position: absolute;
+    left: 45%;
+    top: 90%;
+    padding: 8px 10px;
+    background-color: rgb(204, 156, 96);
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: 8px;
+    color: blanchedalmond;
+}
+#n1ouv2,#n1ouv3, #n1ouv4 {
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    padding: 8px 10px;
+    background-color: rgb(204, 156, 96);
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 8px;
+    color: blanchedalmond;
+
+}
+#n1ouv1:hover,#n1ouv2:hover,#n1ouv3:hover, #n1ouv4:hover{
+    border-bottom: 1px black solid;
+}
+#tprix1,
+#tprix2,
+#tprix3{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+
+}
+#imgt1, #imgt2, #imgt3{
+    
+    position: absolute;
+    border-radius: 15px;
+    height: 35%;
+    width: 40%;
+    left: 32%;
+    top: 5%;
+    background-size: cover;
+    
+}
+#t1ouv1,
+#t1ouv2,
+#t1ouv3{
+    position: absolute;
+    left: 28%;
+    top: 85%;
+    padding: 15px 35px;
+    background-color: rgb(204, 156, 96);
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: 8px;
+    color: blanchedalmond;
+
+}
+#t1ouv1:hover,
+#t1ouv2:hover,
+#t1ouv3:hover{
+    border-bottom: 1px black solid;
+}
+
+
+
+
+.nouveaut {
+    position: relative;
+    left: 510px;
+    color: rgb(204, 156, 96);
+}
+.tendancet {
+    position: relative;
+    left: 650px;
+    top: 350px;
+    color: rgb(204, 156, 96);
+}
 
 .tendance1 {
     grid-area: tendance1;
     position: relative;
     top: 150px;
     height: 600px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
+}
+
+.tendance1:hover,.tendance2:hover,.tendance3:hover{
+    transform: scale(1.1);
+    background-color: rgba(221,188,149,0.67);
+    opacity: 0.9;
 }
 .tendance2 {
     grid-area: tendance2;
@@ -115,7 +313,7 @@ header{
     top: 150px;
     /*width: 26.38%;*/
     height: 600px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
 
 }
@@ -125,7 +323,7 @@ header{
     top: 150px;
     /*width: 26.38%;*/
     height: 600px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
 
 }
@@ -139,8 +337,47 @@ header{
 .sinscrire1{
     width: 100%;
     height: 91px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
+}
+#news1{
+    position: absolute;
+    left: 150px;
+    top: 35px;
+}
+
+#emailnews{
+    position: absolute;
+    left: 480px;
+    top:30px;
+    background-color: rgba(221,188,149,0.67);
+    opacity: 0.3;
+    border-radius: 15px;
+    width: 380px;
+    height: 25px;
+}
+
+#emailnews:hover{
+    background-color: rgb(204, 156, 96);
+
+}
+
+#inscriptionbutton{
+    position: absolute;
+    border: none;
+    left: 950px;
+    top: 22px;
+    padding: 15px 35px;
+    background-color: rgb(204, 156, 96);
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: 8px;
+    color: blanchedalmond;
+}
+
+#inscriptionbutton:hover{
+    border-bottom: 1px black solid;
 }
 .conditions{
     height: 480px;
@@ -154,7 +391,7 @@ header{
     top: 50px;
     width: 17%;
     height: 350px; 
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
     
 }
@@ -163,7 +400,7 @@ header{
     top: 50px;
     width: 17%;
     height: 350px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
 
 }
@@ -172,7 +409,7 @@ header{
     top: 50px;
     width: 17%;
     height: 350px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
 
 }
@@ -181,7 +418,7 @@ header{
     top: 50px;
     width: 17%;
     height: 350px;
-    background-color: rgba(221,188,149,0.67);
+    background-color: rgba(221,188,149,1);
     border-radius: 15px;
     }
 
@@ -192,10 +429,129 @@ footer{
 }
 
 @media screen and (max-width: 414px){
+    header{
+        height: 42px;
+    }
+    #logo{
+        position: relative;
+        left: -125px;
+        width: 160px;
+        height: 50px;
+        top: -1px;
+    }
+
+    .burger{
+        position: absolute;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .burger div{
+        height: 6px;
+        width: 40px;
+        background-color: black;
+        margin-top: 7px;
+        border-radius: 10px;
+    }
+    .burger:active{
+        color: red;
+    }
+    nav{
+        top: +60px;
+        margin-top: 10px;
+    }
+    nav ul{
+        position: relative;
+        top: -80px;
+        left:-225px;
+        background-color: rgba(221,188,149,1);;
+        height: 400px;
+        width: 200px;
+        z-index: 1;
+    }
+    #logo1responsive{
+        display:block;
+        position: relative;
+        left: -20px;
+        top: -45px;
+        width: 30px;
+        height: 70px;
+    }
+    #logo1{
+        display: none;
+    }
+    .na1{
+        display:block;
+        position: relative;
+        left:-7px;
+        top:-55px;
+        border-radius: 35px;
+        padding: 3px;
+        width: 10px;
+        font-size: 16px;
+        color: red;
+    }
+    .animation1{
+        display:none;
+    }
+    .na{
+        position: relative;
+        left:-40px;
+        top:-20px;
+    }
+    li{
+        position: relative;
+        display: block;
+        top: 50px;
+        margin-top: 25px;
+        border-bottom: 2px solid chocolate;
+        
+    }
+    #lien3{
+        display: block;
+    }
+    
+#n1ouv1{
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    padding: 4px 10px;
+    background-color: rgb(204, 156, 96);
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 8px;
+    color: blanchedalmond;
+}
+#n1ouv2,#n1ouv3, #n1ouv4 {
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    padding: 4px 10px;
+    background-color: rgb(204, 156, 96);
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 8px;
+    color: blanchedalmond;
+
+}
+    nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            top: 20px;
+            margin-top: 30px;
+        }
     .novaute {
         top:60px;
         height:500px;
     }
+    #descrnouveau1{}
+    #descrsousnouveau1{}
+    #descrsousnouveau2{}
+    #descrsousnouveau3{}
+    
     .n_patisserie{
         height:150px;
     }
@@ -207,6 +563,18 @@ footer{
     }
     .n1_epicerie{
         height:150px;
+    }
+    
+.nouveaut {
+    position: relative;
+    left: 100px;
+    color: rgb(204, 156, 96);
+}
+    .tendancet {
+        position: relative;
+        left: 130px;
+        top: +40px;
+        color: rgb(204, 156, 96);
     }
     .tendance{
         top:40px;
@@ -220,6 +588,21 @@ footer{
         grid-row-gap: 1%;
         margin:0;
     }
+#t1ouv1,
+#t1ouv2,
+#t1ouv3{
+    position: absolute;
+    left: 13%;
+    top: 85%;
+    padding: 15px 40px;
+    background-color: rgb(204, 156, 96);
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16pxx;
+    font-weight: 8px;
+    color: blanchedalmond;
+
+}
     .tendance1{
         top:10px;
         height:400px;
@@ -236,11 +619,55 @@ footer{
         height:400px;
         width: 210px;
     }
-
+    .nouveau {
+        position: relative;
+        left: 350px;
+    }
+    .tendance {
+        position: relative;
+        left: 10px;
+    }
+    #descrtendance1{}
+    #descrtendance2{}
+    #descrtendance3{}
+    #tprix1{}
+    #tprix2{}
+    #tprix3{}
+    
     .sinscrire1{
         position: relative;
         top:80px;
     }
+    #news1{
+        position: absolute;
+        left: 50px;
+        top: 10px;
+    }
+    
+    #emailnews{
+        position: absolute;
+        left: 50px;
+        top:35px;
+        background-color: rgba(221,188,149,0.67);
+        opacity: 0.3;
+        border-radius: 15px;
+        width: 270px;
+        height: 25px;
+    }
+    #inscriptionbutton{
+        position: absolute;
+        border: none;
+        left: 130px;
+        top: 65px;
+        padding: 3px 10px;
+        background-color: rgb(204, 156, 96);
+        border-radius: 15px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 15px;
+        font-weight: 8px;
+        color: blanchedalmond;
+    }
+    
 
     .conditions{
         position: relative;

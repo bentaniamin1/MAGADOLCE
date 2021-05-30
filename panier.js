@@ -1,11 +1,5 @@
 let listePanier = [
-    {
-        "panier" : 2,
-        "id" : 0,
-        "nom" : "Prodits1",
-        "prix" : 7,
-        "img" : "Images\epicerie\amande_hachée.png",
-    },
+
 ]
 let checkPanierligne = localStorage.getItem("listePanier");
 if(checkPanierligne == undefined){

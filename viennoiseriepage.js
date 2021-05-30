@@ -21,7 +21,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[0].nom}</h1>
             <h2>${contenu2.viennoiseries[0].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[0].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[0].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -30,7 +30,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[1].nom}</h1>
             <h2>${contenu2.viennoiseries[1].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[1].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[1].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -39,7 +39,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[2].nom}</h1>
             <h2>${contenu2.viennoiseries[2].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[2].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[2].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -48,7 +48,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[3].nom}</h1>
             <h2>${contenu2.viennoiseries[3].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[3].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[3].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -57,7 +57,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[4].nom}</h1>
             <h2>${contenu2.viennoiseries[4].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[4].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[4].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -66,7 +66,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[5].nom}</h1>
             <h2>${contenu2.viennoiseries[5].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[5].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[5].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -75,7 +75,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[6].nom}</h1>
             <h2>${contenu2.viennoiseries[6].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[6].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[6].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -84,7 +84,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[7].nom}</h1>
             <h2>${contenu2.viennoiseries[7].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[7].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[7].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -93,7 +93,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[8].nom}</h1>
             <h2>${contenu2.viennoiseries[8].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button id ="ajouter${contenu2.viennoiseries[8].id}">Ajouter au panier</button>
+            <button id ="ajouter_${contenu2.viennoiseries[8].id}">Ajouter au panier</button>
             </div>
             </section>
             <section>
@@ -102,7 +102,7 @@ request.onload = function() {
             <h1>${contenu2.viennoiseries[9].nom}</h1>
             <h2>${contenu2.viennoiseries[9].prix} $</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti molestiae voluptates quis, eum ratione reprehenderit atque vel. Ad, necessitatibus. Eveniet architecto quidem delectus nulla, totam iste sed veritatis eius.</p>
-            <button class ="couleur" id ="ajouter${contenu2.viennoiseries[9].id}">Ajouter au panier</button>
+            <button class ="couleur" id ="ajouter_${contenu2.viennoiseries[9].id}">Ajouter au panier</button>
             </div>
             </section>
             
@@ -129,7 +129,7 @@ request.onload = function() {
         `;
         let main = document.querySelector("main");
         main.innerHTML += html;*/
-        let btnviennoiserie = document.getElementById("ajouter1");
+        let btnviennoiserie = document.getElementById("ajouter_150");
         btnviennoiserie.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[0]);
@@ -151,7 +151,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie1 = document.getElementById("ajouter1");
+        let btnviennoiserie1 = document.getElementById("ajouter_2");
         btnviennoiserie1.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[1]);
@@ -173,7 +173,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie2 = document.getElementById("ajouter2");
+        let btnviennoiserie2 = document.getElementById("ajouter_3");
         btnviennoiserie2.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[2]);
@@ -195,7 +195,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie3 = document.getElementById("ajouter3");
+        let btnviennoiserie3 = document.getElementById("ajouter_4");
         btnviennoiserie3.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[3]);
@@ -217,7 +217,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie4 = document.getElementById("ajouter4");
+        let btnviennoiserie4 = document.getElementById("ajouter_5");
         btnviennoiserie4.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[4]);
@@ -239,7 +239,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie5 = document.getElementById("ajouter5");
+        let btnviennoiserie5 = document.getElementById("ajouter_6");
         btnviennoiserie5.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[5]);
@@ -261,7 +261,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie6 = document.getElementById("ajouter6");
+        let btnviennoiserie6 = document.getElementById("ajouter_7");
         btnviennoiserie6.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[6]);
@@ -283,7 +283,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie7 = document.getElementById("ajouter7");
+        let btnviennoiserie7 = document.getElementById("ajouter_8");
         btnviennoiserie7.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[7]);
@@ -305,7 +305,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie8 = document.getElementById("ajouter8");
+        let btnviennoiserie8 = document.getElementById("ajouter_9");
         btnviennoiserie8.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[8]);
@@ -327,7 +327,7 @@ request.onload = function() {
                 nmbrPanier.innerHTML = listePanier1.length - 10 ;
             }
         });
-        let btnviennoiserie9 = document.getElementById("ajouter9");
+        let btnviennoiserie9 = document.getElementById("ajouter_10");
         btnviennoiserie9.addEventListener("click",()=>{
 
             console.log(contenu2.viennoiseries[9]);

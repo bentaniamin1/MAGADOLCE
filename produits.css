@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 html{
 }
@@ -55,6 +56,28 @@ li  {
     width: 250px;
     height: 65px;
     top: 10px;
+}
+#logo1{
+    position: relative;
+    width: 40px;
+    height: 50px;
+    top:-25px;
+
+}
+.na1{
+    display: block;
+    position: relative;
+        margin-left: 30px;
+        padding: 5px;
+        border-radius: 25px;
+        width: 7px;
+        height: 12px;
+        top: 45px;
+        z-index: 1;
+        color: red;
+}
+#logo1responsive{
+    display:none;
 }
 .info{
     height: 100px;
@@ -155,9 +178,10 @@ footer{
     }
     #logo{
         position: relative;
-        left: -135px;
+        left: -125px;
         width: 160px;
         height: 50px;
+        top: -1px;
     }
 
     .burger{
@@ -182,7 +206,7 @@ footer{
     }
     nav ul{
         position: relative;
-        top: -36px;
+        top: -80px;
         left:-225px;
         background-color: rgba(221,188,149,1);;
         height: 400px;
@@ -219,7 +243,7 @@ footer{
     section div {
 
         font-size: 12px;
-        left: 2%;
+        left: 8%;
         height: 65%;
         width: 350px;
         display:flex;
@@ -258,6 +282,33 @@ footer{
     position: relative;
     align-items: center;
     text-align: center;
+}
+#logo1responsive{
+    display:block;
+    position: relative;
+    left: -20px;
+    top: -45px;
+    width: 30px;
+    height: 70px;
+}
+#logo1{
+    display: none;
+}
+.na1{
+    display:block;
+    position: relative;
+    left:-7px;
+    top:-55px;
+    border-radius: 35px;
+    padding: 3px;
+    width: 10px;
+    font-size: 16px;
+    color: red;
+}
+
+button{
+    font-size: 17px;
+    height: 25px;
 }
 
 }

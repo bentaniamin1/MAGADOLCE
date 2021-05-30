@@ -5,14 +5,46 @@ let burger = document.getElementById('burger').addEventListener("click", () =>{
 
 });
 
-let finalisation_commande = document.getElementById('finaliser').addEventListener("click", () =>{
+let finalisation_commande = document.getElementById('finaliser').addEventListener("click", (index) =>{
 
     let formulaire1  = document.getElementById("formulaire_commande");
     formulaire1.classList.add("animation2");
     let printSommetot  = document.getElementById("somme_tot");
-    let nombre1 = document.getElementById('nmbrarticle'+(index));
-    printSommetot.innerHTML = "sdfsfdsfer";
+    printSommetot.innerHTML = "Cout Totale";
+    let pr3 = JSON.parse(localStorage.getItem('listePanier'));
+    console.log(pr3);
+    let listelong = pr3.length;
+    console.log(listelong);
+    i =0;
+    while(listelong > i){
+        let tot = pr3[i].prix;
+        console.log(tot);
+        let tot1 = pr3[i].max_articles;
+        console.log(tot1);
+        letar = pr3[i].prix * pr3[i].max_articles  ;
+        console.log(letar);
+        /*console.log(letar + ":" + i);
+        printSommetot.innerHTML = letar;*/
+        let somma =0;
+        printSommetot.innerHTML +=letar +" +" + " + "+ "produits :" + i + ", ";
+        console.log(somma);
+        i++;
 
+    }
+
+    
+
+
+
+});
+let supprimer_les_articles = document.getElementById('deleteAll').addEventListener("click", () =>{
+    console.log("sdfghjklò");
+    localStorage.clear();
+    location.reload();
+
+    /*for(i = 0; longeur; i++){
+        console.log("sdsdf");
+    }*/
 
 });
 
@@ -33,15 +65,17 @@ function plusButton(index){
     let nombre = document.getElementById('ab'+(index));
     let nombre1 = document.getElementById('nmbrarticle'+(index));
     let coutTot = document.getElementById('cTot'+(index));
+    let produitPrix = document.getElementById('produitPrix'+(index));
     console.log(nombre);
     let maxArticles = parseInt(liste[index].max_articles);
     let nombreValue = parseInt(nombre.innerText);
     let nombreValue1 = parseInt(nombre1.innerText);
+    let produitValue = parseInt(produitPrix.innerText);
     console.log(nombreValue);
     if(nombreValue < 9){
         let ajour1 = nombre.innerHTML = nombreValue + 1;
         let ajour3 = nombre1.innerHTML = "nombres d'articles :"+ (nombreValue +1);
-        coutTot.innerHTML = "Cout totale du produit : " +  (nombreValue ) * maxArticles ; 
+        coutTot.innerHTML = "Cout totale du produit : " +  (nombreValue + 1 ) * produitValue + "$" ; 
         
         let pr = JSON.parse(localStorage.getItem('listePanier'));
         let v1 = pr[index].max_articles.value;
@@ -61,17 +95,22 @@ function moinButton(index){
     let nombre = document.getElementById('ab'+(index));
     let nombre1 = document.getElementById('nmbrarticle'+(index));
     let coutTot = document.getElementById('cTot'+(index));
+    let produitPrix = document.getElementById('produitPrix'+(index));
     console.log(nombre);
+    console.log(produitPrix);
     let maxArticles = parseInt(liste[index].max_articles);
     let nombreValue = parseInt(nombre.innerText);
+    let produitValue = parseInt(produitPrix.innerText);
+    console.log(produitValue);
     console.log(nombreValue);
+    
     if(nombreValue > 0){
 
         let ajour1 = nombre.innerHTML = nombreValue - 1;
         let ajour3 = nombre1.innerHTML = "nombres d'articles :"+ (nombreValue -1);
-        coutTot.innerHTML = "Cout totale du produit : " +  (nombreValue ) * maxArticles; 
-        
+        coutTot.innerHTML = "Cout totale du produit : " +  (nombreValue - 1 ) * produitValue + "$"; 
         let pr = JSON.parse(localStorage.getItem('listePanier'));
+        
         let v1 = pr[index].max_articles.value;
         console.log(v1);
         let v2 = pr[index].max_articles = nombreValue;
@@ -93,19 +132,20 @@ function supprimer(index){
     pr.splice(pr[i],1);
     console.log(pr);
     localStorage.setItem('listePanier', JSON.stringify(pr));
-    location.reload()
+    location.reload();
 }
 
 
 let printPanier = ()=> {
-    
-    for(i = 1 ; liste.length; i++){
+
+    for(i = 0 ; liste.length; i++){
+        console.log(i);
         let html = 
         `
-            <div class = "flex-item" id ="prod` +i+ `">
+            <div class = "flex-item" id ="prod` +[i]+ `">
                 <h1 class = "product">${' Produit n° '+ [i] +' , ' +liste[i].nom } <h1>
                 <img class = "imge"id ="imge"src="${liste[i].image} " alt="">
-                <h2 class = " prix">${liste[i].prix} $</h2>
+                <h2 class = " prix" id ="produitPrix` +i+ `">${liste[i].prix} $</h2>
                 <button class = "plus"id = "ajouter` +i+ `" onclick =" plusButton(` +i+ `)">+</button>
                 <p class="quantity" id = "ab` +i+ `">0</p>
                 <button class= "moin" id = "diminuer` +i+ `" onclick ="moinButton(` +i+ `)" >-</button>
@@ -113,11 +153,16 @@ let printPanier = ()=> {
             </div>
         `   ;
         let div =
-        `<div class = "flex-produits"  >
+        `<div class = "flex-produits" id ="prodannonce` +i+ `"  >
         <h1>${liste[i].nom +' produits n° '+[i]} </h1>
         <p id = "nmbrarticle` +i+ `">nombres d'articles : 0</p>
         <p id ="cTot` +i+ `">Cout totale du produit : 0 $ </p>
         </div>`;
+
+        console.log(i);
+        let Sommeprix = 0;
+        Sommeprix += liste[i].prix ;
+        console.log(Sommeprix);
 
         liste[i].prix = liste[i].max_articles * liste[i].prix;
         let somme1 = liste[i].prix + liste[i+1].prix;
@@ -150,23 +195,7 @@ let printPanier = ()=> {
 printPanier();
 
 
-let printSommeTotaleDuProduit = ()=>{
-    let liste = JSON.parse(localStorage.getItem('listePanier'));
-    for(i =0; liste.length; i++){
-    let div =
-    `<h1>${liste[i].nom} </h1> 
-    <p>${infoscmd[i].max_articles}</p>`
 
-    console.log(infoscmd[i].nom);
-    let aside = document.querySelector("aside div");
-    aside.innerHTML = div;
-    };
-
-
-
-};
-
-printRecap();
 
 
 //faut recuperer nombres d'articles dans le paniers

@@ -22,7 +22,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items:flex-end;
-            padding: 20px 10px;
+            padding: 2px 15px;
             background-color: rgb(219, 169, 107);;
             opacity: 0.8;
             position: sticky;
@@ -34,6 +34,26 @@
             text-decoration: none;
             color: honeydew;
             font-size: 20px;
+        }
+        nav ul{
+            position: relative;
+            top: -30px;
+
+        }
+
+        .na{
+            display: block;
+            position: relative;
+            margin-left: 30px;
+            border: 3px black solid;
+            padding: 5px;
+            border-radius: 25px;
+            width: 7px;
+            height: 12px;
+            top: -13px;
+            z-index: 1;
+            color: blue;
+
         }
         li  {
             display: inline-block;
@@ -192,13 +212,44 @@
     }
     #logo{
         position: absolute;
-        left: 150px;
+        left: 90px;
         width: 250px;
         height: 80px;
-        top: 0px;
+        top: 5px;
+    }
+    #logo1{
+        position: relative;
+        width: 40px;
+        height: 50px;
+        top:-10px;
+
+    }
+    #lien4{
+        position: relative;
+        top: 30px;
+    }
+    #panier{
+        display: block;
+        position: relative;
+        margin-left:15px;
     }
     label{
         font-size: 20px;
+    }
+    .na1{
+        display: block;
+        position: relative;
+            margin-left: 30px;
+            padding: 5px;
+            border-radius: 25px;
+            width: 7px;
+            height: 12px;
+            top: 45px;
+            z-index: 1;
+            color: red;
+    }
+    #logo1responsive{
+        display:none;
     }
     input{
         width:50%;
@@ -233,95 +284,27 @@
     background-color: rgb(219, 169, 107);
     width: 100%;
     }
-    footer{
-            height: 380px;
-            background-color: rgba(221,188,149,1) ;
-            width: 100%;
-        }
 
-        #reseaux {
-            font-size: 20px;
-            position: relative;
-            top: 40px;
-            left: 650px;
-        }
-
-        .logoContact {
-           display: grid;
-           grid-template-columns: 1fr 1fr 1fr;
-           position: relative;  
-           top: 90px; 
-           text-align: center;
-        }
-
-        #logoFB {
-        margin-left: 500px;
-        }
-
-        #logoLKD {
-            margin-right: 500px;
-        }
-
-        .titres{
-         display: grid;
-           grid-template-columns: 1fr 1fr 1fr 1fr;
-           position: relative;  
-           top: 150px; 
-           text-align: center;
-        }
-
-        .aide {
-            position: relative;
-            top: 175px;
-            left: 120px;
-        }
-
-        .contact {
-            position: relative;
-            top: 100px;
-            left: 480px;
-        }
-
-        .magasin {
-            position: relative;
-            top: 30px;
-            left: 830px;
-        }
-
-        .horaires {
-            position: relative;
-            top: -25px;
-            left: 1210px;
-        }
-
-        .n_patisserie a {
-            text-decoration: none;
-            color: white;
-        }
-        .n_viennoiserie a {
-            text-decoration: none;
-            color: white;
-        }
-        .n_epicerie a {
-            text-decoration: none;
-            color: white;
-        }
-        .n1_epicerie a {
-            text-decoration: none;
-            color: white;
-        }
-        .tendance1 a {
-            text-decoration: none;
-            color: white;
-        }
-        .tendance2 a {
-            text-decoration: none;
-            color: white;
-        }
-        .tendance3 a {
-            text-decoration: none;
-            color: white;
-        }
+    #prod0l{
+        display: none;
+    }
+    #prodannonce0l{
+        display: none;
+    }
+    #deleteAll{
+        position : relative;
+        left: 600px;
+        top: -200px;
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: rgb(204, 156, 96);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 16px;
+        font-weight: 8px;
+        color: blanchedalmond;
+        border: none;
+    }
 @media screen and (max-width: 414px) {
     body{
         width:100%;
@@ -332,6 +315,7 @@
     }
     header{
         position: inherit;
+        padding: 15px 0px;
     }
     aside{
         top: 700px;
@@ -402,7 +386,7 @@
     }
     nav ul{
         position: relative;
-        top: -115px;
+        top: -168px;
         left:-225px;
         background-color: rgba(221,188,149,1);;
         height: 400px;
@@ -412,10 +396,18 @@
     .animation1{
         display:none;
     }
-    .na{
+    .na1{
+        display:block;
         position: relative;
-        left:-40px;
-        top:-20px;
+        left:-10px;
+        top:-55px;
+        border-radius: 35px;
+        padding: 2px;
+        font-size: 16px;
+        color: red;
+    }
+    .na{
+        display:none;
     }
     li{
         position: relative;
@@ -446,7 +438,7 @@
         display:none;
         top: 450px;
         width: 380px;
-        height: 850px;
+        height: 900px;
         left: 1%;
         margin: 0 10px;
         opacity: 1;
@@ -466,6 +458,30 @@
     label,input{
         position:relative;
         margin: 15px 50px;
+        left:15px;
+    }
+    #logo1responsive{
+        display:block;
+        position: relative;
+        left: -20px;
+        top: -45px;
+        width: 30px;
+        height: 50px;
+    }
+    #logo1{
+        display: none;
+    }
+    #finaliser{
+        position:relative;
+        top:-5px;
+        left:20px;
+        font-size: 17px;
+        width: 150px;
+    }
+    #deleteAll{
+        position: relative;
+        left:50px;
+
     }
 }
     
@@ -478,22 +494,39 @@
             <div></div>
         </div>
         <img id = "logo"src="Images\background\logo_white_large.png" alt="">
-        <p id ="Panier" class="na">0</p>
+        <img id = "logo1responsive"src="Images\background\logo_byAmin.png" alt="">
+        <p id ="Panier" class="na1">0</p>
         <nav>
             <ul>
                 <li id ="lien1"><a href="viennoiserie.html" class="lien">Viennoiseries</a></li>
                 <li id ="lien2"><a href="epicerie.html" class="lien">épicerie</a></li>
                 <li id ="lien3"><a href="patisserie.html" class="lien">Patisserie</a></li>
+                <li id ="lien4">
+                    <img id = "logo1"src="Images\background\logo_byAmin.png" alt="">
+                </li>
             </ul>
         </nav>
     </header>
 <h1 id= "titre">Mon Panier</h1>
 <aside>
-    <div id="cv"></div>
+    <div id="cv">
+        <div class = "flex-produits" id ="prodannonce0l"  >
+            <h1> </h1>
+            <p id = "nmbrarticle0l">hjghjklk</p>
+            <p id ="cTot0l">66 </p>
+        </div>;
+    </div>
 </aside>
 <div id = "scroll">
     
-    <main></main>
+    <main>
+        <div class = "flex-item" id ="prod0l">
+            <h1 class = "product"> Produit n° 0<h1>
+            <img class = "imge"id ="imge"src=" " alt="">
+            <h2 class = " prix">13$</h2>
+            <p class="quantity" id = "ab0l">0</p>
+        </div> 
+    </main>
 </div>
 <div class="modal1" id = "formulaire_commande">
     <h2>Finalisation de commande</h2></br>
@@ -522,6 +555,7 @@
 </div>
 <div class = "finalisation">
     <button id="finaliser">finaliser la commande</button>
+    <button id="deleteAll">Supprimer tout les articles</button>
 </div>
     <script type ="text/javascript" src="panier.js"></script>
     <script type ="text/javascript" src="panierpage.js"></script>
