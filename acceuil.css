@@ -80,7 +80,7 @@ li  {
     top: 150px;
     height: 950px;
     margin: 0 10%;
-    left: 10px;
+    left: 9px;
     /*position: relative;
     height: 800px;
     margin:0 6%;
@@ -135,6 +135,7 @@ li  {
     justify-content: space-between;*/
     display: grid;
     grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:  
     "p1  v1 v3";
     margin:0 6%;
